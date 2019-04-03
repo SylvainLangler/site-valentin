@@ -1,0 +1,161 @@
+ /* GLOBAL */
+ 
+a{
+    text-decoration: none;
+    color:black;
+ }
+
+a:hover{
+     text-decoration:none;
+     color:darkorange;
+ }
+
+.menu h5,h2,h3,h4,h5,p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+ /* MENU PRINCIPAL */
+
+.menu{
+    margin-top:60px;
+}
+
+.menu li{
+    margin:2em;
+}
+
+.menu h5{
+    font-size:20px;
+}
+
+.hamburger{
+    display:none;
+    z-index:1000;
+}
+
+@media (max-width:1132px){
+    .menu li{
+        margin:1em;
+    }
+}
+
+@media (max-width:973px){
+    .logo{
+        display:none;
+    }
+    .menu .nav{
+        width:100%;
+    }
+    .menu li{
+        margin:auto;
+    }
+}
+
+@media (max-width:680px){
+    .menu .nav-item{
+        display:none;
+    }
+    .hamburger{
+        display:initial;
+    }
+}
+
+/* MENU 2 */
+
+.menu2{
+    background:#0b141e;
+    display:none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0px;
+    z-index:100;
+}
+
+.menu2 ul{
+    display:inline;
+    text-align:center;
+    
+}
+
+.menu2 li{
+    color:lightblue;
+    margin:1.6rem;
+    margin-top:2em;
+}
+
+.menu2 a{
+    color:#F3FFFD;
+}
+
+.menu2 a:hover{
+    color:#4CCB83;
+}
+
+.menu2 li:first-child{
+    margin-top:10em;
+}
+
+/* CSS ANIM TITRES */
+
+.menu h5, .title h5 {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu h5:before, .title h5:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 80%;
+    bottom: 0;
+    background: #43ffc3;
+    height: 11px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.menu h5:hover:before, .menu h5:focus:before, .menu h5:active:before, .title h5:hover:before, .title h5:focus:before, .title h5:active:before {
+    right: 0;
+}
+
+/* A PROPOS */
+
+.img_texture{
+    position:absolute;
+    top: 370px;
+    z-index: -1;
+    left:100px;
+}
+
+@media (max-width:1300px){
+    .img_texture{
+        display:none;
+    }
+}
+
+.photo1{
+    margin: auto;
+}
+
+.title{
+    margin:auto;
+    margin-top:4rem;
+}
+
+.presentation{
+    background-color:#281700;
+    color:white;
+}
+
+
