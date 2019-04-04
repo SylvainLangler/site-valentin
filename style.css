@@ -158,4 +158,22 @@ a:hover{
     color:white;
 }
 
+/* PORTFOLIO */
+
+.portfolio{
+    margin-top:3rem;
+}
+
+.projets{
+    margin-top:3rem;
+}
+
+.projets div{
+    margin-top: 30px;
+}
+
+.title{
+    cursor:pointer;
+}
+
 
