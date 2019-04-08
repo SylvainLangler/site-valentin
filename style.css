@@ -14,6 +14,10 @@ a:hover{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    background-color:#ab7777;
+}
+
 
  /* MENU PRINCIPAL */
 
@@ -165,7 +169,7 @@ a:hover{
 }
 
 .projets{
-    margin-top:3rem;
+    margin-top:.5rem;
 }
 
 .projets div{
@@ -184,6 +188,75 @@ a:hover{
 }
 
 
+/* TRI PORTFOLIO */
 
+.work{
+    margin-top:2rem;
+}
+
+@media screen and (min-width: 741px){
+    .filter-list {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .work .filter-list {
+        padding: 20px;
+        width: 200px;
+        display: none;
+        z-index: 15;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:white;
+    }
+}
+
+.filter-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter-item{
+    cursor: pointer;
+    padding:7px;
+    font-size: 20px;
+    color: black;
+    border-bottom: 2px solid transparent;
+    transition: .3s border, .3s color;
+    margin:auto;
+}
+
+@media (min-width:741px){
+    .selected-cat, .fa-angle-down{
+        display:none;
+    }
+}
+
+@media (max-width:740px){
+    .selected-cat{
+        display:inline;
+    }
+    
+}
+
+@media (max-width:740px){
+    .filter-list{
+        display:none;
+    }
+}
+
+.selected-cat{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fa-angle-down{
+    transition: .3s;
+    font-size:20px;
+}
 
 

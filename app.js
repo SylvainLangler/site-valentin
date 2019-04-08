@@ -17,7 +17,26 @@ $(document).ready(function () {
         $('html, body').stop().animate({scrollTop: $(target).offset().top}, 500 ); 
     });
 
+    /* Animations tri portfolio */
 
+    if(window.innerWidth < 740){
+      $(".filter-group").addClass("is-active");
+    }
+
+    if($(".filter-group").hasClass("is-active")){
+
+      $(".selected-cat, .fa-angle-down").click(function(){
+        $(".fa-angle-down").toggleClass('fa-rotate-180');
+        $(".filter-list").slideToggle();
+      });
+  
+      $(".filter-item").click(function(){
+        $(".selected-cat").text("");
+        $(".selected-cat").text($(this).text());
+        $(".fa-angle-down").toggleClass('fa-rotate-180');
+        $(".filter-list").slideToggle();
+      });
+    }
     
     mixitup('#projets', {// #projets
         load: {
