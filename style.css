@@ -194,13 +194,13 @@ body{
     margin-top:2rem;
 }
 
-@media screen and (min-width: 741px){
+@media screen and (min-width: 769px){
     .filter-list {
         display: flex !important;
     }
 }
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 768px){
     .work .filter-list {
         padding: 20px;
         width: 200px;
@@ -230,20 +230,20 @@ body{
     margin:auto;
 }
 
-@media (min-width:741px){
+@media (min-width:769px){
     .selected-cat, .fa-angle-down{
         display:none;
     }
 }
 
-@media (max-width:740px){
+@media (max-width:768px){
     .selected-cat{
         display:inline;
     }
     
 }
 
-@media (max-width:740px){
+@media (max-width:768px){
     .filter-list{
         display:none;
     }
