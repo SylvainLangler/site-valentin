@@ -10,8 +10,9 @@ a:hover{
      color:darkorange;
  }
 
-.menu h5,h2,h3,h4,h5,p{
+.menu h5,h2,h3,h4,h5{
     font-family: 'Quicksand', sans-serif;
+    font-weight:1000;
 }
 
 body{
@@ -281,4 +282,40 @@ body{
 
 .croix img{
     height:50px;
+}
+
+
+/* CV */
+
+@media (max-width:575px){
+    .cv h5{
+        margin-left:1em;
+    }
+}
+
+.cv p{
+    font-size:21px;
+}
+
+.experiences{
+    padding:20px;
+    background-color:#64b2c4;
+}
+
+
+/* FOOTER */
+
+.footer_infos{
+    color:white;
+    padding:30px;
+    text-align:center;
+   
+}
+
+.footer_infos h4, .footer_infos h5{
+    font-weight:initial;
+}
+
+.footer{
+    background-color:#332305;
 }
