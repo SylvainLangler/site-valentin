@@ -57,7 +57,7 @@ $(document).ready(function () {
   $(".projets div a").click(function(){
 
     var id = $(this).attr("id");
-    $(id).slideDown();
+    $(id).slideToggle();
     $(id).css('display', 'flex');
 
     //.hide().fadeIn();
@@ -65,7 +65,7 @@ $(document).ready(function () {
     $(".projets").hide();
 
     $(".croix").click(function(){
-      $(id).css('display','none');
+      $(id).slideUp();
       $(".projets").show();
     });
 
