@@ -169,11 +169,12 @@ body{
 }
 
 .projets{
-    margin-top:.5rem;
+    margin-top:0.5rem;
 }
 
 .projets div{
     margin-top: 30px;
+    cursor:pointer;
 }
 
 .title{
@@ -259,4 +260,26 @@ body{
     font-size:20px;
 }
 
+/* POP UP PROJET */
 
+.popup{
+    padding-top:50px;
+    margin-top:-50px;
+    height: 1000px;
+    display:none;
+    position: relative;
+    z-index: 10;
+    top:50px;
+    background-color:RGBA(255,101,61,0.8);
+}
+
+.croix{
+    position:relative;
+    top:0;
+    left:50px;
+    cursor:pointer;
+}
+
+.croix img{
+    height:50px;
+}
