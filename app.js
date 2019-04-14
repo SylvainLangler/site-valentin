@@ -73,7 +73,7 @@ $(document).ready(function () {
       //$(".cache").hide();
       $(id).slideUp(1000);
       $(".projets").show();
-      setTimeout(function(){ $(".work").slideToggle();}, 850);
+      setTimeout(function(){ $(".work").slideDown();}, 850);
       
     });
 
