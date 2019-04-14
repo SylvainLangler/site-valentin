@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-
+  // Animation du menu avec un hamburger pour le menu sur format téléphone
   $(".hamburger").click(function(){
       $(".menu2").slideToggle();
   });
@@ -16,7 +16,7 @@ $(document).ready(function () {
       $('html, body').stop().animate({scrollTop: $(target).offset().top}, 700 ); 
   });
 
-  /* Animations tri portfolio */
+  // Animations tri portfolio
 
   if(window.innerWidth < 740){
     $(".filter-group").addClass("is-active");
@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
   }
   
-  mixitup('#projets', {// #projets
+  mixitup('#projets', {
       load: {
           sort: 'order:asc'
       },
@@ -46,7 +46,7 @@ $(document).ready(function () {
         duration: 700
       },
       classNames: {
-        block: 'filtres', // filtres
+        block: 'filtres', 
         elementFilter: 'filter-btn'
       },
       selectors: {
@@ -56,40 +56,62 @@ $(document).ready(function () {
 
   $(".projets div a").click(function(){
 
+    // on récupère l'id du projet cliqué
     var id = $(this).attr("id");
+
+    // on fait remonter un peu plus haut le popup
+    $(".popup").css("margin-top","-100px");
+
+    // on scroll vers le titre portfolio si jamais l'utilisateur a cliqué sur un projet un peu plus bas dans la page
     $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 ); 
+
+    // on fait descendre le popup et on lui rajoute un display flex
     $(id).slideToggle(700);
     $(id).css('display', 'flex');
-
-    //.hide().fadeIn();
     
+    // en même temps on cache tous les autres projets et on affiche la div vide qui permet d'éviter de voir la partie CV 
     $(".projets").hide();
     $(".cache").show();
-    $(".work").hide();
 
+    setTimeout(function(){ $(".btn-nav").show(300);}, 1000);
+    
+
+    // on cache les catégories permettant de trier et on attends un peu et on recache la div vide
+    $(".work").fadeTo(300,0);
     setTimeout(function(){ $(".cache").hide();}, 1000);
 
+    // au clic sur la croix en haut à droite du pop up
     $(".croix").click(function(){
-      //$(".cache").hide();
-      $(id).slideUp(700);
+
+      // on ferme le popup
+      $(".popup").slideUp(700);
+
+      // on re-affiche tous les projets
       $(".projets").show();
-      setTimeout(function(){ $(".work").slideDown(300);}, 600);
+
+      // on attends un peu et on refait apparaître le menu de tri
+      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+
+      $(".btn-nav").hide(500);
       
     });
-
-    
 
   });
 
   // ANIMATION SKILLS //
 
+  // au clic sur une des catégories, on demande à animer l'image correspondante
   $(".anim img").bind("click", function(){
     var selected = $(this).parent().attr('id');
     animate(selected);
   });
 
+
+  
+  
   var previousAnimated = null;
 
+  // trois cas différents: si c'est la première fois qu'une image est animée, si on clique sur une image qui a déjà été animée, et le reste
   function animate(selected){
     if(previousAnimated == null){
         TweenMax.to('#'+selected+' img',0.3,{x:-520, ease:SteppedEase.config(8)});
@@ -104,6 +126,37 @@ $(document).ready(function () {
     }
   }
 
+
+  // test
+
+  $(".next").click(function(){
+    $(this).closest(".popup").hide();
+    
+    var test_actif = $(this).parents(".popup").next().is(".popup");
+
+    if(!test_actif){
+      $(".projets").show();
+      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+    }
+    else{
+      $(this).closest(".popup").next().show();
+    }
+    
+  });
+
+  $(".previous").click(function(){
+    $(this).closest(".popup").hide();
+
+    var test_actif = $(this).parent(".popup").prev().is(".popup");
+
+    if(!test_actif){
+      $(".projets").show();
+      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+    }
+    else{
+      $(this).closest(".popup").prev().show();
+    }
+  });
   
 
 });

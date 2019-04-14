@@ -284,6 +284,23 @@ body{
     height:50px;
 }
 
+.btn-nav{
+    position:absolute;
+    height:55px;
+    top:50%;
+    z-index: 10;
+    cursor:pointer;
+    display:none;
+}
+
+.previous{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
 
 /* CV */
 
