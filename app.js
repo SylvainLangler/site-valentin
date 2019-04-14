@@ -65,13 +65,16 @@ $(document).ready(function () {
     
     $(".projets").hide();
     $(".cache").show();
+    $(".work").hide();
 
     setTimeout(function(){ $(".cache").hide();}, 1000);
 
     $(".croix").click(function(){
       //$(".cache").hide();
-      $(id).slideUp();
+      $(id).slideUp(1000);
       $(".projets").show();
+      setTimeout(function(){ $(".work").slideToggle();}, 850);
+      
     });
 
     
