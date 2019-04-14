@@ -62,14 +62,37 @@ $(document).ready(function () {
 
     //.hide().fadeIn();
     
-    $(".projets").hide();
+    //$(".projets").hide();
 
     $(".croix").click(function(){
       $(id).slideUp();
-      $(".projets").show();
+      //$(".projets").show();
     });
 
   });
+
+  // ANIMATION SKILLS //
+
+  $(".anim img").bind("click", function(){
+    var selected = $(this).parent().attr('id');
+    animate(selected);
+  });
+
+  var previousAnimated = null;
+
+  function animate(selected){
+    if(previousAnimated == null){
+        TweenMax.to('#'+selected+' img',0.3,{x:-520, ease:SteppedEase.config(8)});
+        previousAnimated = selected;
+    } else if(selected == previousAnimated) {
+      TweenMax.to('#'+previousAnimated+' img',0.3,{x:0, ease:SteppedEase.config(8)});
+      previousAnimated = null;
+    } else {
+      TweenMax.to('#'+selected+' img',0.3,{x:-520, ease:SteppedEase.config(8)});
+      TweenMax.to('#'+previousAnimated+' img',0.3,{x:0, ease:SteppedEase.config(8)});
+      previousAnimated = selected;
+    }
+  }
 
   
 

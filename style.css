@@ -302,6 +302,30 @@ body{
     background-color:#64b2c4;
 }
 
+/* SKILLS ANIM */
+
+#ae, #ai, #an, #id, #pr, #ps, #c4d, #code, #klynt, #photo {
+    width:65px;
+    height:65px;
+    overflow:hidden;
+    margin:1em;
+    margin-left:0;
+}
+
+.anim img{
+    cursor:pointer;
+    width:585px;
+    height:65px;
+}
+
+.anim h5{
+    top:-30px;
+}
+
+.anim .row{
+    height:77px;
+}
+
 
 /* FOOTER */
 
