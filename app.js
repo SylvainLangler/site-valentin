@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     var id = $(this).attr("id");
     $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 ); 
-    $(id).slideToggle(1000);
+    $(id).slideToggle(700);
     $(id).css('display', 'flex');
 
     //.hide().fadeIn();
@@ -71,9 +71,9 @@ $(document).ready(function () {
 
     $(".croix").click(function(){
       //$(".cache").hide();
-      $(id).slideUp(1000);
+      $(id).slideUp(700);
       $(".projets").show();
-      setTimeout(function(){ $(".work").slideDown();}, 850);
+      setTimeout(function(){ $(".work").slideDown(300);}, 600);
       
     });
 
