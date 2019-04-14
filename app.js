@@ -57,17 +57,22 @@ $(document).ready(function () {
   $(".projets div a").click(function(){
 
     var id = $(this).attr("id");
+    $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 ); 
     $(id).slideToggle();
     $(id).css('display', 'flex');
 
     //.hide().fadeIn();
     
-    //$(".projets").hide();
+    $(".projets").hide();
+    $(".cache").show();
 
     $(".croix").click(function(){
+      $(".cache").hide();
       $(id).slideUp();
-      //$(".projets").show();
+      $(".projets").show();
     });
+
+    
 
   });
 
