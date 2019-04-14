@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     var id = $(this).attr("id");
     $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 ); 
-    $(id).slideToggle();
+    $(id).slideToggle(1000);
     $(id).css('display', 'flex');
 
     //.hide().fadeIn();
@@ -66,8 +66,10 @@ $(document).ready(function () {
     $(".projets").hide();
     $(".cache").show();
 
+    setTimeout(function(){ $(".cache").hide();}, 1000);
+
     $(".croix").click(function(){
-      $(".cache").hide();
+      //$(".cache").hide();
       $(id).slideUp();
       $(".projets").show();
     });
