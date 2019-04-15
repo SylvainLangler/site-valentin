@@ -2,10 +2,20 @@ $(document).ready(function () {
     
   // Animation du menu avec un hamburger pour le menu sur format téléphone
   $(".hamburger").click(function(){
+      if($(".hamburger").hasClass("active")){
+        TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(8)});
+        $(".hamburger").removeClass("active");
+      }
+      else{
+        TweenMax.to(".hamburger img",0.3,{x:-400, ease:SteppedEase.config(8)});
+        $(".hamburger").addClass("active");
+      }
       $(".menu2").slideToggle();
   });
   
   $(".menu2 a").click(function(){
+
+      
       $(".menu2").slideToggle();
       var target = $(this).attr("href");
       $('html, body').stop().animate({scrollTop: $(target).offset().top}, 700 ); 
