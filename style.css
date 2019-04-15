@@ -106,7 +106,6 @@ body{
 /* CSS ANIM TITRES */
 
 .menu h5, .title h5 {
-
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -114,7 +113,7 @@ body{
     overflow: hidden;
 }
 
-.menu h5:before, .title h5:before {
+.menu h5:before, .title h5:before, .title h5:not(:active):before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -190,13 +189,11 @@ body{
     cursor:pointer;
 }
 
-
 @media (min-width: 768px) and (max-width:992px) {
     .mix-target{
         width:330px;
     }
 }
-
 
 /* TRI PORTFOLIO */
 
@@ -303,6 +300,11 @@ body{
 
 .previous{
     left:15px;
+    transition:.3s;
+}
+
+.previous:hover{
+    left:10px;
 }
 
 .next{
@@ -314,6 +316,14 @@ body{
     right:10px;
 }
 
+@media (max-width:500px){
+    .next{
+        right:2px;
+    }
+    .previous{
+        left:2px;
+    }
+}
 
 .up{
     height: 80px;
@@ -321,6 +331,11 @@ body{
     right: 30px;
     bottom: 10px;
     cursor: pointer;
+    transition:.3s ease;
+}
+
+.up:hover{
+    bottom:20px;
 }
 
 
@@ -365,6 +380,12 @@ body{
     height:77px;
 }
 
+@media (max-width:768px){
+    .images_skills{
+        line-height:0 !important;
+        margin-top:4em;
+    }
+}
 
 /* FOOTER */
 
