@@ -73,8 +73,9 @@ $(document).ready(function () {
     $(".projets").hide();
     $(".cache").show();
 
-    setTimeout(function(){ $(".btn-nav").show(300);}, 1000);
+    //setTimeout(function(){ $(".btn-nav").show(300);}, 1000);
     
+    $(".btn-nav").show(300);
 
     // on cache les catégories permettant de trier et on attends un peu et on recache la div vide
     $(".work").fadeTo(300,0);
@@ -94,6 +95,10 @@ $(document).ready(function () {
 
       $(".btn-nav").hide(500);
       
+    });
+
+    $(".up").click(function(){
+      $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 );
     });
 
   });
@@ -127,10 +132,10 @@ $(document).ready(function () {
   }
 
 
-  // test
+  // Boutons de navigation entre les projets
 
   $(".next").click(function(){
-    $(this).closest(".popup").hide();
+    $(this).closest(".popup").hide(300);
     
     var test_actif = $(this).parents(".popup").next().is(".popup");
 
@@ -139,13 +144,13 @@ $(document).ready(function () {
       setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
     }
     else{
-      $(this).closest(".popup").next().show();
+      $(this).closest(".popup").next().show(300);
     }
     
   });
 
   $(".previous").click(function(){
-    $(this).closest(".popup").hide();
+    $(this).closest(".popup").hide(300);
 
     var test_actif = $(this).parent(".popup").prev().is(".popup");
 
@@ -154,7 +159,7 @@ $(document).ready(function () {
       setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
     }
     else{
-      $(this).closest(".popup").prev().show();
+      $(this).closest(".popup").prev().show(300);
     }
   });
   

@@ -7,7 +7,7 @@ a{
 
 a:hover{
      text-decoration:none;
-     color:darkorange;
+     color:black;
  }
 
 .menu h5,h2,h3,h4,h5{
@@ -38,6 +38,7 @@ body{
     display:none;
     z-index:1000;
 }
+
 
 @media (max-width:1132px){
     .menu li{
@@ -149,6 +150,7 @@ body{
     }
 }
 
+
 .photo1{
     margin: auto;
 }
@@ -161,6 +163,12 @@ body{
 .presentation{
     background-color:#281700;
     color:white;
+}
+
+@media (max-width:992px){
+    .presentation{
+        margin-top:2em;
+    }
 }
 
 /* PORTFOLIO */
@@ -287,18 +295,32 @@ body{
 .btn-nav{
     position:absolute;
     height:55px;
-    top:50%;
+    top:20em;
     z-index: 10;
     cursor:pointer;
     display:none;
 }
 
 .previous{
-    left:10px;
+    left:15px;
 }
 
 .next{
+    right:15px;
+    transition:.3s;
+}
+
+.next:hover{
     right:10px;
+}
+
+
+.up{
+    height: 80px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 
