@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function () {
     
   // Animation du menu avec un hamburger pour le menu sur format téléphone
