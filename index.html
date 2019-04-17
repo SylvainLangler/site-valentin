@@ -108,7 +108,7 @@
                     <div class="filter-group">
                         <h5 class="selected-cat">TOUS</h5>&nbsp;<i class="fas fa-angle-down m-1"></i>
                         <ul class="filter-list">
-                            <li class="filter-item" data-filter="all">TOUS</li>
+                            <li class="filter-item selected-cat-color" data-filter="all">TOUS</li>
                             <li class="filter-item" data-filter=".photos">PHOTO</li>
                             <li class="filter-item" data-filter=".video">VIDEO</li>
                             <li class="filter-item" data-filter=".print">PRINT</li>
@@ -158,38 +158,38 @@
             <img src="images/up_arrow.png" class="up">
         </div>
         <div class="row justify-content-center projets" id="projets">
-            <div class="col-lg-4 mix-target photos" >
+            <div class="col-lg-4 mix-target photos" data-order=1>
                 <a id="#projet1">
                     <img class="img-fluid w-100" src="images/QuandjeseraigrandMiniature.jpg">
                 </a>
             </div>
-            <div class="col-lg-4 mix-target photos">
+            <div class="col-lg-4 mix-target photos" data-order=2>
                 <a id="#projet2">
                 <img class="img-fluid w-100" src="images/image.jpg">
                 </a>
             </div>
-            <div class="col-lg-4 mix-target video">
+            <div class="col-lg-4 mix-target video" data-order=3>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target video">
+            <div class="col-lg-4 mix-target video" data-order=4>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target print">
+            <div class="col-lg-4 mix-target print" data-order=5>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target photos">
+            <div class="col-lg-4 mix-target photos" data-order=6>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target photos">
+            <div class="col-lg-4 mix-target photos"  data-order=7>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target print">
+            <div class="col-lg-4 mix-target print" data-order=8>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target video">
+            <div class="col-lg-4 mix-target video" data-order=9>
                 <img class="img-fluid w-100" src="images/image.jpg">
             </div>
-            <div class="col-lg-4 mix-target print">
+            <div class="col-lg-4 mix-target print" data-order=10>
                 <a id="#projet1">
                     <img class="img-fluid w-100" src="images/image.jpg">
                 </a>
@@ -392,6 +392,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/mixitup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="app.js"></script>
 
 </html>

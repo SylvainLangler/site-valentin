@@ -197,6 +197,10 @@ body{
 
 /* TRI PORTFOLIO */
 
+.selected-cat-color{
+    background-color: #00ffae;
+}
+
 .work{
     margin-top:2rem;
 }

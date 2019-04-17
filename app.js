@@ -37,6 +37,11 @@ $(document).ready(function () {
       $(".filter-list").slideToggle();
     });
   }
+
+  $(".filter-item").click(function(){
+    $(".filter-item").removeClass("selected-cat-color");
+      $(this).addClass("selected-cat-color", 400);
+  });
   
   mixitup('#projets', {
       load: {
