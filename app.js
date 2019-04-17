@@ -2,25 +2,14 @@ $(document).ready(function () {
     
   // Animation du menu avec un hamburger pour le menu sur format téléphone
   $(".hamburger").click(function(){
-      if($(".hamburger").hasClass("active")){
-        TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(8)});
-        $(".hamburger").removeClass("active");
-        $("body").css("overflow", "initial");
-      }
-      else{
-        TweenMax.to(".hamburger img",0.3,{x:-400, ease:SteppedEase.config(8)});
-        $(".hamburger").addClass("active");
-        $("body").css("overflow", "hidden");
-      }
-      $(".menu2").slideToggle();
+      animateHamburger();
   });
   
   $(".menu2 a").click(function(){
-
-      
       $(".menu2").slideToggle();
       var target = $(this).attr("href");
       $('html, body').stop().animate({scrollTop: $(target).offset().top}, 700 ); 
+      $("body").css("overflow", "initial");
   });
 
   $(".menu a").click(function(){
@@ -66,11 +55,46 @@ $(document).ready(function () {
       }
   });
 
-  $(".projets div a").click(function(){
+  $(document).keydown(
+    function (event) {
+        var key = event.keyCode;
+        var actualPopup = $(".popup-actif");
+        if(key == 39){
+          showNextProject(actualPopup);
+        }
+        if(key == 37){
+          showPreviousProject(actualPopup);
+        }
+        if(key == 27){
+          closeProject(actualPopup);
+        }
+    }
+  );
 
+  $(".projets div a").on('click', function(){
     // on récupère l'id du projet cliqué
     var id = $(this).attr("id");
+    animateProject(id);
+  });
 
+  // au clic sur la croix en haut à droite du pop up
+  $(".croix").click(function(){
+    var project = $(this).closest(".popup");
+    closeProject(project);
+  });
+
+  $(".next").click(function(){
+    var actualPopup = $(this).closest(".popup");
+    showNextProject(actualPopup);
+  });
+
+  $(".previous").click(function(){
+    var actualPopup = $(this).closest(".popup");
+    showPreviousProject(actualPopup);
+  });
+
+  function animateProject(id){
+    
     // on fait remonter un peu plus haut le popup
     $(".popup").css("margin-top","-100px");
 
@@ -79,42 +103,88 @@ $(document).ready(function () {
 
     // on fait descendre le popup et on lui rajoute un display flex
     $(id).slideToggle(700);
+    $(id).addClass("popup-actif");
     $(id).css('display', 'flex');
     
     // en même temps on cache tous les autres projets et on affiche la div vide qui permet d'éviter de voir la partie CV 
     $(".projets").hide();
     $(".cache").show();
-
-    //setTimeout(function(){ $(".btn-nav").show(300);}, 1000);
     
+    // on affiche les boutons de navigation (flèche droite et gauche)
     $(".btn-nav").show(300);
 
     // on cache les catégories permettant de trier et on attends un peu et on recache la div vide
     $(".work").fadeTo(300,0);
     setTimeout(function(){ $(".cache").hide();}, 1000);
 
-    // au clic sur la croix en haut à droite du pop up
-    $(".croix").click(function(){
-
-      // on ferme le popup
-      $(".popup").slideUp(700);
-
-      // on re-affiche tous les projets
-      $(".projets").show();
-
-      // on attends un peu et on refait apparaître le menu de tri
-      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
-
-      $(".btn-nav").hide(500);
-      
-    });
-
     $(".up").click(function(){
       $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 );
     });
+  }
 
-  });
+  function closeProject(project){
 
+    project.removeClass("popup-actif");
+    // on ferme le popup
+    $(".popup").slideUp(700);
+
+    // on re-affiche tous les projets
+    $(".projets").show();
+
+    // on attends un peu et on refait apparaître le menu de tri
+    setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+
+    $(".btn-nav").hide(500);
+  }
+
+  function showNextProject(actualPopup){
+    $(actualPopup).removeClass("popup-actif");
+    $(actualPopup).hide(300);
+    
+    var test_actif = $(actualPopup).next().is(".popup");
+
+    if(!test_actif){
+      $(".projets").show();
+      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+    }
+    else{
+      var nextPopup = $(actualPopup).next();
+      nextPopup.addClass("popup-actif");
+      nextPopup.show(300);
+    }
+  }
+
+  function showPreviousProject(actualPopup){
+    $(actualPopup).removeClass("popup-actif");
+    $(actualPopup).hide(300);
+
+    var test_actif = $(actualPopup).prev().is(".popup");
+
+    if(!test_actif){
+      $(".projets").show();
+      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
+    }
+    else{
+      var previousPopup = $(actualPopup).prev();
+      previousPopup.addClass("popup-actif");
+      previousPopup.show(300);
+    }
+  }
+
+  function animateHamburger(){
+    if($(".hamburger").hasClass("active")){
+      TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(8)});
+      $(".hamburger").removeClass("active");
+      $("body").css("overflow", "initial");
+    }
+    else{
+      TweenMax.to(".hamburger img",0.3,{x:-400, ease:SteppedEase.config(8)});
+      $(".hamburger").addClass("active");
+      $("body").css("overflow", "hidden");
+    }
+    $(".menu2").slideToggle();
+  }
+  
   // ANIMATION SKILLS //
 
   $(".images_skills img").hide();
@@ -133,8 +203,6 @@ $(document).ready(function () {
     $(".images_skills img").hide();
     showImage(selected)
   })
-
-
   
   
   var previousAnimated = null;
@@ -161,38 +229,5 @@ $(document).ready(function () {
       $('html, body').stop().animate({scrollTop: $(".images_skills").offset().top}, 1000 );
     }
   }
-
-
-  // Boutons de navigation entre les projets
-
-  $(".next").click(function(){
-    $(this).closest(".popup").hide(300);
-    
-    var test_actif = $(this).parents(".popup").next().is(".popup");
-
-    if(!test_actif){
-      $(".projets").show();
-      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
-    }
-    else{
-      $(this).closest(".popup").next().show(300);
-    }
-    
-  });
-
-  $(".previous").click(function(){
-    $(this).closest(".popup").hide(300);
-
-    var test_actif = $(this).parent(".popup").prev().is(".popup");
-
-    if(!test_actif){
-      $(".projets").show();
-      setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
-    }
-    else{
-      $(this).closest(".popup").prev().show(300);
-    }
-  });
   
-
 });
