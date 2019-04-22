@@ -6,8 +6,9 @@ body {
 /* <Popup txt> */
 
 #projet1 {
-    background-color: #c1c1c1;
-    !important;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(179, 179, 179);
+   
 }
 
 .titrepopup {
@@ -61,6 +62,38 @@ body {
 }
 
 
+
+  
+#smokeprojet2{
+
+    margin-top:100px;
+    max-width: 50%;
+}
+
+@media (min-width:768px) {
+    #smokeprojet2{
+        border:30px solid white;
+        box-shadow: 3px 3px 5px 5px rgba(110, 110, 110, 0.2)
+    }
+}
+
+#smokeprojet2point1{
+    width: 300px;
+    margin-top: 5vw;
+}
+
+#italictxt{
+        margin-bottom: 13vw;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        margin-top: 0.5vw;
+    }
+
+#projet2{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(179, 179, 179);
+}
 /* </Popup txt> */
 
 
