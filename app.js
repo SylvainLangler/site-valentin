@@ -236,3 +236,27 @@ $(document).ready(function () {
   }
   
 });
+
+
+if(window.innerWidth > 768){
+$("#flecheup").mouseover(
+  function(){
+ 	  var spriteshetDroite = TweenMax.to('#flecheup', 0.7, {repeat: -1,x: -1000,ease: SteppedEase.config(10)})
+
+});
+}
+
+
+ if(window.innerWidth <= 768){
+     $("#flecheup").mouseover(
+        function(){
+ 	  var spriteshetDroite = TweenMax.to('#flecheup', 0.7, {repeat: -1,x: -700,ease: SteppedEase.config(10)})
+
+});
+ }
+
+$("#flecheup").mouseleave(
+  function(){
+ 	  var spriteshetDroite = TweenMax.to('#flecheup', 0, {x: 0})
+    
+});
