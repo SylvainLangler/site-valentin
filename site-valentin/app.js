@@ -6,10 +6,9 @@ $(document).ready(function () {
   });
   
   $(".menu2 a").click(function(){
-      $(".menu2").slideToggle();
+      animateHamburger();
       var target = $(this).attr("href");
       $('html, body').stop().animate({scrollTop: $(target).offset().top}, 700 ); 
-      $("body").css("overflow", "initial");
   });
 
   $(".menu a").click(function(){
