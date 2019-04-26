@@ -476,21 +476,9 @@ h5 {
 
 @media (max-width:1200px){
     .test{
-        width:290px !important;
-        top:-290px !important;
-    }
-
-    .test img{
-        width:870px;
-    }
-}
-
-@media (max-width:992px){
-    .test{
         display:none;
     }
 }
-
 
 .title {
     cursor: pointer;

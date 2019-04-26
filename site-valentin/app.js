@@ -384,15 +384,10 @@ function updateLabel(label, resizeElement, position) {
 
 $(".test").mouseover(
   function(){
-    if(window.innerWidth <= 1200){
-      TweenMax.to('.test img',0.3,{x:-6350, ease:SteppedEase.config(21)});
-    }
-    else{
-      TweenMax.to('.test img',0.3,{x:-7350, ease:SteppedEase.config(21)});
-    }
+      TweenMax.to('.test img',0.5,{x:-7350, ease:SteppedEase.config(21)});
 });
 
 $(".test").mouseleave(
   function(){
-    TweenMax.to('.test img',0.3,{x:0, ease:SteppedEase.config(21)});
+    TweenMax.to('.test img',0,{x:0, ease:SteppedEase.config(21)});
 });
