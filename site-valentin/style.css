@@ -480,6 +480,13 @@ h5 {
     }
 }
 
+@media (max-width:768px){
+    .projets .col-lg-4{
+        height:initial;
+    }
+}
+
+
 .title {
     cursor: pointer;
 }
