@@ -468,10 +468,29 @@ h5 {
     margin-top: 0.5rem;
 }
 
-.projets div {
+.projets .col-lg-4 {
     margin-top: 30px;
     cursor: pointer;
+    height:350px;
 }
+
+@media (max-width:1200px){
+    .test{
+        width:290px !important;
+        top:-290px !important;
+    }
+
+    .test img{
+        width:870px;
+    }
+}
+
+@media (max-width:992px){
+    .test{
+        display:none;
+    }
+}
+
 
 .title {
     cursor: pointer;
@@ -727,4 +746,11 @@ h5 {
 
 .footer {
     background-color: #332305;
+}
+
+.test{
+    position: relative;
+    top: -350px;
+    width: 350px;
+    overflow: hidden;
 }
