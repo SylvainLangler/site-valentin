@@ -142,9 +142,9 @@ $(document).ready(function () {
   }
 
   function showNextProject(actualPopup){
-    $(actualPopup).removeClass("popup-actif");
-    $(actualPopup).hide(300);
+    $(actualPopup).removeClass("popup-actif").hide(300);
     
+    // on vérifie s'il existe un prochain popup
     var test_actif = $(actualPopup).next().is(".popup");
 
     if(!test_actif){
@@ -153,15 +153,12 @@ $(document).ready(function () {
     }
     else{
       var nextPopup = $(actualPopup).next();
-      nextPopup.addClass("popup-actif");
-      nextPopup.show(300);
-    nextPopup.css("display","flex");
+      nextPopup.addClass("popup-actif").show(300).css("display","flex");
     }
   }
 
   function showPreviousProject(actualPopup){
-    $(actualPopup).removeClass("popup-actif");
-    $(actualPopup).hide(300);
+    $(actualPopup).removeClass("popup-actif").hide(300);
 
     var test_actif = $(actualPopup).prev().is(".popup");
 
@@ -171,9 +168,7 @@ $(document).ready(function () {
     }
     else{
       var previousPopup = $(actualPopup).prev();
-      previousPopup.addClass("popup-actif");
-      previousPopup.show(300);
-    previousPopup.css("display","flex");
+      previousPopup.addClass("popup-actif").show(300).css("display","flex");
     }
   }
 
@@ -235,35 +230,32 @@ $(document).ready(function () {
       $('html, body').stop().animate({scrollTop: $(".images_skills").offset().top}, 1000 );
     }
   }
-  
 });
 
+// FIN Animation skills //
 
-if(window.innerWidth > 768){
-$("#flecheup").mouseover(
-  function(){
- 	  TweenMax.to('#flecheup', 0.7, {repeat: -1,x: -1000,ease: SteppedEase.config(10)})
 
-});
+// HOVER SPRITESHEETS //
+
+if(window.innerWidth > 1200){
+  $("#flecheup").mouseover(function(){
+    TweenMax.to('#flecheup', 0.7, {repeat: -1,x: -1000,ease: SteppedEase.config(10)})
+  });
 }
 
-
- if(window.innerWidth <= 768){
-     $("#flecheup").mouseover(
-        function(){
- 	  TweenMax.to('#flecheup', 0.7, {repeat: -1,x: -700,ease: SteppedEase.config(10)})
-
-});
- }
-
-$("#flecheup").mouseleave(
-  function(){
- 	  TweenMax.to('#flecheup', 0, {x: 0})
-    
+$("#flecheup").mouseleave(function(){
+ 	TweenMax.to('#flecheup', 0, {x: 0})
 });
 
+$(".hover_project").mouseover(function(){
+  TweenMax.to($('img',this),0.5,{x:-7350, ease:SteppedEase.config(21)});
+});
 
-//////////////////////////////////////////
+$(".hover_project").mouseleave(function(){
+  TweenMax.to($('img',this),0,{x:0, ease:SteppedEase.config(21)});
+});
+
+/////// JS comparaison d'images ///////
 
 var dragging = false,
     scrolling = false,
@@ -381,13 +373,3 @@ function updateLabel(label, resizeElement, position) {
     }
 }
 
-
-$(".test").mouseover(
-  function(){
-      TweenMax.to('.test img',0.5,{x:-7350, ease:SteppedEase.config(21)});
-});
-
-$(".test").mouseleave(
-  function(){
-    TweenMax.to('.test img',0,{x:0, ease:SteppedEase.config(21)});
-});
