@@ -171,6 +171,16 @@ $(document).ready(function () {
       previousPopup.addClass("popup-actif").show(300).css("display","flex");
     }
   }
+
+function injectStyles(rule) {
+  var div = $("<div />", {
+    html: '&shy;<style>' + rule + '</style>'
+  }).appendTo("body");    
+} 
+
+   
+
+ 
     
 $("#menu3").hide(); 
   function animateHamburger(){
@@ -192,6 +202,8 @@ $("#menu3").hide();
         setTimeout(function(){ $("#menu3").show();}, 500); 
         $(".menu2").show(); 
         TweenMax.to(".menu-sprite",1,{x:-8160, ease:SteppedEase.config(12)});
+         injectStyles('.disableclic{visibility: visible!important;}'),5000;    
+
         
     }
        
