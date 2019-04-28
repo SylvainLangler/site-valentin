@@ -172,37 +172,39 @@ $(document).ready(function () {
     }
   }
 
-function injectStyles(rule) {
+/*function injectStyles(rule) {
   var div = $("<div />", {
     html: '&shy;<style>' + rule + '</style>'
   }).appendTo("body");    
-} 
+} */
 
    
 
  
     
-$("#menu3").hide(); 
+$(".menu2-nav").hide(); 
   function animateHamburger(){
+    
     if($(".hamburger").hasClass("active")){
+        $(this).clearQueue();
         TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(8)});
         $(".hamburger").removeClass("active");
         $("body").css("overflow", "initial");
         TweenMax.to(".menu-sprite",1,{x:0, ease:SteppedEase.config(12)});
         setTimeout(function(){ $(".menu-sprite").hide();}, 1000);
-        setTimeout(function(){ $("#menu3").hide();}, 400);
-        setTimeout(function(){ $(".menu2").hide();}, 1000);
+        setTimeout(function(){ $(".menu2-nav").hide();}, 400);
          
     }
     else{
+        $(this).clearQueue();
         TweenMax.to(".hamburger img",0.3,{x:-400, ease:SteppedEase.config(8)});
         $(".hamburger").addClass("active");
         $("body").css("overflow", "hidden");
         $(".menu-sprite").show(); 
-        setTimeout(function(){ $("#menu3").show();}, 500); 
+        setTimeout(function(){ $(".menu2-nav").show();}, 500); 
         $(".menu2").show(); 
         TweenMax.to(".menu-sprite",1,{x:-8160, ease:SteppedEase.config(12)});
-         injectStyles('.disableclic{visibility: visible!important;}'),5000;    
+        //injectStyles('.disableclic{visibility: visible!important;}'),5000;    
 
         
     }
