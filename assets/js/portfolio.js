@@ -89,6 +89,19 @@ $(document).ready(function () {
     showNextProject($(".popup-actif"));
   });
 
+
+  $(window).scroll(function(e){
+    var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
+    if(scrollTop > $(".cv").offset().top){
+      $(".bottom-menu").hide();
+    }
+    else{
+      if($(".popup").hasClass("popup-actif")){
+        $(".bottom-menu").show();
+      }
+    }
+  });
+
   function openProject(id){
     // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
     if(innerWidth <= 768){
