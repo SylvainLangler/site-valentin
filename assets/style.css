@@ -27,9 +27,28 @@
   right: 0;
 }
 
+/* Langues */
 
+#language{
+top: 50px;
+position: absolute;
+right: 50px;
+z-index: 10000;
+display: flex;
+}
 
+#english, #francais{
+    width: 30px;
+    text-align: center;
+}
 
+#francais{
+
+    font-weight: 600;
+
+}
+
+/* fin Langues */
 
 body {
     background-color: #f7f4f2;
@@ -322,9 +341,10 @@ a:hover {
 
 .menu h5,
 h4,
-h5 {
+h5,
+h2{
     font-family: 'Quicksand', sans-serif;
-    font-weight: 1000;
+    font-weight: 500;
 }
 
 #titlename{
@@ -377,7 +397,7 @@ margin: auto;
     margin: 2em;
 }
 
-.menu h5 {
+.menu h5, .menu h2 {
     font-size: 20px;
 }
 
@@ -519,9 +539,47 @@ h6{
     margin-top: 4rem;
 }
 
+#titleval{
+    font-weight: bold!important;
+}
+
+/* CSS ANIM TITRES */
+
+.menu h2,
+.title h2 {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu h2:before,
+.title h2:before,
+.title h2:not(:active):before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: #00ffae;
+    height: 12px;
+  
+}
+
+
+
+@media (max-width:992px) {
+#titleval{
+ display: none;
+margin: 0px!important;
+    }}
+
 .presentation {
-    background-color: #281700;
+    background-color: #00ffae;
     color: white;
+    
 }
 
 @media (max-width:992px) {
