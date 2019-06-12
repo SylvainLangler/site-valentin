@@ -60,32 +60,46 @@ $(document).ready(function () {
   $(".projets div").on('click', function(){
     // on récupère l'id du projet cliqué
     var id = $(this).attr("id");
-    animateProject(id);
+    openProject('.'+id);
   });
 
   // au clic sur la croix en haut à droite du pop up
   $(".croix").click(function(){
-    var project = $(this).closest(".popup");
-    closeProject(project);
+    closeProject($(".popup-actif"));
+  });
+  
+  $(".bottom-cross").click(function(){
+    closeProject($(".popup-actif"));
+    $(".bottom-menu").hide();
   });
 
   $(".next").click(function(){
-    var actualPopup = $(this).closest(".popup");
-    showNextProject(actualPopup);
+    showNextProject($(".popup-actif"));
   });
 
   $(".previous").click(function(){
-    var actualPopup = $(this).closest(".popup");
-    showPreviousProject(actualPopup);
+    showPreviousProject($(".popup-actif"));
   });
 
-  function animateProject(id){
-    
+  $(".bottom-previous").click(function(){
+    showPreviousProject($(".popup-actif"));
+  });
+
+  $(".bottom-next").click(function(){
+    showNextProject($(".popup-actif"));
+  });
+
+  function openProject(id){
+    // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
+    if(innerWidth <= 768){
+      $(".bottom-menu").show();
+      $("#flecheright, #flecheleft, .croix, #flecheup").hide();
+    }
     // on fait remonter un peu plus haut le popup
     $(".popup").css("margin-top","-100px");
 
     // on scroll vers le titre portfolio si jamais l'utilisateur a cliqué sur un projet un peu plus bas dans la page
-    $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 1000 ); 
+    $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 0 ); 
 
     // on fait descendre le popup et on lui rajoute un display flex
     $(id).slideToggle(700);
@@ -121,9 +135,20 @@ $(document).ready(function () {
     setTimeout(function(){ $(".work").fadeTo(300,1);}, 500);
 
     $(".btn-nav").hide(500);
+
+    if(innerWidth <= 768){
+      var idProject = '#' + $(project).attr('class').split(" ")[3];
+      setTimeout(function(){$('html, body').stop().animate({scrollTop: $(idProject).offset().top}, 0 )}, 700);
+    }
+
   }
 
   function showNextProject(actualPopup){
+
+    if(innerWidth <= 768){
+      $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 0);
+    }
+    
     $(actualPopup).removeClass("popup-actif").hide(300);
     
     // on vérifie s'il existe un prochain popup
@@ -140,6 +165,11 @@ $(document).ready(function () {
   }
 
   function showPreviousProject(actualPopup){
+
+    if(innerWidth <= 768){
+      $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 0);
+    }
+
     $(actualPopup).removeClass("popup-actif").hide(300);
 
     var test_actif = $(actualPopup).prev().is(".popup");
@@ -153,7 +183,5 @@ $(document).ready(function () {
       previousPopup.addClass("popup-actif").show(300).css("display","flex");
     }
   }
-
-	
 
 });

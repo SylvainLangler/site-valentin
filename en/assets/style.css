@@ -673,6 +673,8 @@ h6{
 
 /* POP UP PROJET */
 
+
+
 .embed-responsive {
     width: 900px!important;
     margin-top: 5vw;
@@ -959,7 +961,7 @@ margin-top: 100px;
   width: 0;
   height: 100%;
   overflow: hidden;
- /projet12/goutte2.jpg /* Force Hardware Acceleration in WebKit */
+  /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
