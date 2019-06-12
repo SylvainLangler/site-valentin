@@ -567,15 +567,9 @@ h6{
 
 
 @media (max-width:992px) {
-#titleval{
- display: none;
-margin: 0px!important;
-    }}
-
-.presentation {
-    background-color: #00ffae;
-    color: white;
-    
+    #titlevaldiv{
+        display: none;
+    }
 }
 
 @media (max-width:992px) {

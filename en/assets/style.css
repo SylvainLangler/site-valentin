@@ -58,10 +58,6 @@ body {
 
 /* <Popup txt> */
 
-#projet1,#projet2, #projet3 {
-    box-shadow: 0px 0px 10px rgb(179, 179, 179);
-}
-
 .titrepopup {
     font-family: 'Quicksand', sans-serif;
     font-weight: 1000;
