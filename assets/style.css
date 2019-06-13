@@ -399,7 +399,20 @@ margin: auto;
 
 .hamburger {
     display: none;
-    z-index: 1000;
+    z-index: 999999;
+    position: fixed;
+    top:20px;
+      left:50%;
+    transform: translate(-50%);
+}
+
+.hamburgerfond{
+    top:0px;
+    position: fixed;
+    z-index: 999998;
+    left:50%;
+    transform: translate(-50%);
+    display: none;
 }
 
 @media (max-width:1132px) {
@@ -424,10 +437,15 @@ margin: auto;
     .menu .nav-item {
         display: none;
     }
-    .hamburger {
+    
+    
+    .hamburger,.hamburgerfond {
         display: initial;
     }
+    
+    
 }
+
 
 
 /* MENU 2 */

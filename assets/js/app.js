@@ -92,18 +92,18 @@ $("#socialnetwork2 img").mouseleave(function(){
 
 function animateHamburger(){
   if($(".hamburger").hasClass("active")){
-    TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(8)});
+    TweenMax.to(".hamburger img",0.3,{x:0, ease:SteppedEase.config(5)});
     $(".hamburger").removeClass("active");
     $("body").css("overflow", "initial");
-    TweenMax.to(".menu-sprite",1,{x:0, ease:SteppedEase.config(12)});
-    setTimeout(function(){ $(".menu2").hide();}, 1500);
+    TweenMax.to(".menu-sprite",1,{x:0, ease:SteppedEase.config(16)});
+    setTimeout(function(){ $(".menu2").hide();}, 1000);
   }
   else{
-    TweenMax.to(".hamburger img",0.3,{x:-400, ease:SteppedEase.config(8)});
+    TweenMax.to(".hamburger img",0.3,{x:-250, ease:SteppedEase.config(5)});
     $(".hamburger").addClass("active");
     $("body").css("overflow", "hidden");
     $(".menu2").show(); 
-    TweenMax.to(".menu-sprite",1,{x:-8160, ease:SteppedEase.config(12)});
+    TweenMax.to(".menu-sprite",2,{x:-10200, ease:SteppedEase.config(16)});
   }
 }
 
