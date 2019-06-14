@@ -96,7 +96,7 @@ $(document).ready(function () {
       $(".bottom-menu").hide();
     }
     else{
-      if($(".popup").hasClass("popup-actif")){
+      if($(".popup").hasClass("popup-actif") && innerWidth <= 768){
         $(".bottom-menu").show();
       }
     }
@@ -104,6 +104,7 @@ $(document).ready(function () {
 
   function openProject(id){
     // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
+    console.log(innerWidth);
     if(innerWidth <= 768){
       $(".bottom-menu").show();
       $("#flecheright, #flecheleft, .croix, #flecheup").hide();
@@ -197,10 +198,9 @@ $(document).ready(function () {
     }
   }
 
+  $("#voirplus").click(function(){
+    $('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 500 );
+  });
+
 });
 
-$("#voirplus").click(function(){
-$('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 500 );
-}
-)
-;

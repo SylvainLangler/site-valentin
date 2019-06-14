@@ -4,10 +4,6 @@
     font-family: 'Quicksand';
     font-weight: 300;
 }
-
-
-
-
 .images2{
     height: 24px;
 }
@@ -163,6 +159,7 @@
   .right {
   left: 0%;
   }
+}
 
     
     
@@ -195,8 +192,3 @@
 .images2:hover:before, .images2:focus:before, .images2:active:before {
   right: 0;
 }
-
-
-
-    
-    
