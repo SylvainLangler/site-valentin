@@ -92,7 +92,7 @@ $(document).ready(function () {
 
   $(window).scroll(function(e){
     var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
-    if(scrollTop > $(".cv").offset().top){
+    if(scrollTop > $(".timeline").offset().top){
       $(".bottom-menu").hide();
     }
     else{
@@ -198,3 +198,9 @@ $(document).ready(function () {
   }
 
 });
+
+$("#voirplus").click(function(){
+$('html, body').stop().animate({scrollTop: $("#portfolio").offset().top}, 500 );
+}
+)
+;

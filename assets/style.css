@@ -27,6 +27,44 @@
   right: 0;
 }
 
+
+
+
+.images2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.images2:before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #00ffae;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.images2:hover:before, .images2:focus:before, .images2:active:before {
+  right: 0;
+}
+
+.images2{
+    height: 24px;
+}
+
+
+
 /* Langues */
 
 #language{
@@ -53,6 +91,7 @@ display: flex;
 body {
     background-color: #f7f4f2;
     margin-bottom: 0px!important;
+    
 }
 
 /* <Popup txt> */
@@ -259,7 +298,7 @@ body {
 }
 
 #projet13-6{
-    margin-top: 2vw;
+    margin-top: 20px;
 }
 
 .lastimage{
@@ -325,15 +364,20 @@ body {
 
 /* GLOBAL */
 
+
 a {
     text-decoration: none;
     color: black;
 }
 
+
 a:hover {
     text-decoration: none;
     color: black;
 }
+
+#titrexp{
+    font-weight: bold!important;}
 
 .menu h5,
 h4,
@@ -403,8 +447,10 @@ margin: auto;
     position: fixed;
     top:20px;
       left:50%;
-    transform: translate(-50%);
+    
+transform: translate(-50%);
 }
+
 
 .hamburgerfond{
     top:0px;
@@ -483,6 +529,22 @@ margin: auto;
 }
 
 
+.titreimg{
+margin-left: 50%;
+transform: translate(-50%);
+margin-top: 6vw;
+width: 300px;
+margin-bottom: 2vw;
+}
+
+@media (max-width:768px) {
+    .titreimg{
+       width: 220px!important;
+margin-top: 10vw;
+margin-bottom: 7vw;
+    }
+}
+
 h6{
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
@@ -490,6 +552,12 @@ h6{
 
 #name2{
     font-weight: 600;
+}
+
+
+h5{
+    text-align: center;
+   
 }
 
 /* CSS ANIM TITRES */
@@ -548,10 +616,7 @@ h6{
 }
 
 
-.title {
-    margin: auto;
-    margin-top: 4rem;
-}
+
 
 #titleval{
     font-weight: bold!important;
@@ -876,14 +941,6 @@ h6{
 }
 
 
-/* CV */
-
-@media (max-width:575px) {
-    .cv h5 {
-        margin-left: 1em;
-    }
-}
-
 
 
 
@@ -953,49 +1010,13 @@ h6{
     overflow: hidden;
 }
 
-#texteformation{
-    font-size: 16px;
-    font-family: 'Quicksand';
-    font-weight: 300;
-    color:white;
-}
-
-#formation{
-    margin-bottom: 3px;
-    font-family: 'Quicksand';
-    font-weight: 300;
-    font-size: 18px;
-    color:white;
-}
-
-#date{
-    color:#00ffae;
-    font-family: 'Quicksand';
-    font-weight: 300;
-    font-size: 18px;
-}
-
-#voirplus{
-    font-size: 15px;
-    color:#00ffae;
-    font-family: 'Quicksand';
-    font-weight: 300;
-}
-
-#formation1, #formation2, #formation3, #experience1, #experience2, #experience3, #experience4{
-    margin-top: 2vw;
-}
 
 
-#formation2{
-    right:0px;
-}
 
-.experiences {
-    padding: 20px;
-    background-color: #191b1a;
-    width: 500px;
-}
+
+
+
+
 /* COMPARAISON D'IMAGES PROJET */
 
 .comp {
@@ -1014,6 +1035,18 @@ h6{
     #imagecomp{
         margin-top: 85px!important;}
 }
+
+@media (min-width:1200px) {
+#formation0{
+    background-color: aqua;
+    height: 624px;
+    top: -624px;
+    overflow-y: scroll;
+
+  
+}
+}
+
 
 
 .cd-image-container {
