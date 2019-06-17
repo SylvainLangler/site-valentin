@@ -186,6 +186,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $(".work").fadeTo(300, 1);
       }, 500);
+      $(".bottom-menu").hide();
     } else {
       var nextPopup = $(actualPopup).next();
       nextPopup.addClass("popup-actif").show(300).css("display", "flex");
@@ -209,6 +210,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $(".work").fadeTo(300, 1);
       }, 500);
+      $(".bottom-menu").hide();
     } else {
       var previousPopup = $(actualPopup).prev();
       previousPopup.addClass("popup-actif").show(300).css("display", "flex");
