@@ -1,5 +1,28 @@
 // Animations tri portfolio
 $(document).ready(function () {
+
+  // ajout automatique de l'attribut data-cat pour chaque projet
+  $(".popup").each(function() {
+    var tab = [];
+
+    var numProject = $(this).attr("class").split(' ')[3];
+
+    tab = $("#" + numProject).attr("class").split(' ');
+    console.log(tab);
+
+    var str = "";
+
+    for(var i = 2; i< tab.length; i++){
+      if(i == (tab.length -1)){
+        str = str + tab[i];
+      }
+      else{
+        str = str + tab[i] + ' ';
+      }
+    }
+    $(this).attr("data-cat", str);
+  });
+
   if (window.innerWidth < 740) {
     $(".filter-group").addClass("is-active");
   }
@@ -12,6 +35,7 @@ $(document).ready(function () {
     });
 
     $(".filter-item").click(function () {
+      otherFilterActive = false;
       $(".selected-cat").text("");
       $(".selected-cat").text($(this).text());
       $(".fa-angle-down").toggleClass('fa-rotate-180');
@@ -20,6 +44,7 @@ $(document).ready(function () {
   }
 
   $(".filter-item").click(function () {
+    otherFilterActive = false;
     $(".filter-item").removeClass("selected-cat-color");
     $(this).addClass("selected-cat-color", 400);
   });
@@ -103,13 +128,10 @@ $(document).ready(function () {
 
   function openProject(id) {
     // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
-    console.log(innerWidth);
     if (innerWidth <= 768) {
       $(".bottom-menu").show();
       $("#flecheright, #flecheleft, .croix, #flecheup").hide();
     }
-    // on fait remonter un peu plus haut le popup
-    $(".popup").css("margin-top", "-100px");
 
     // on scroll vers le titre portfolio si jamais l'utilisateur a cliqué sur un projet un peu plus bas dans la page
     $('html, body').stop().animate({
@@ -177,9 +199,17 @@ $(document).ready(function () {
     }
 
     $(actualPopup).removeClass("popup-actif").hide(300);
+    // on récupère la catégorie du projet
+    var cat_project = $(actualPopup).attr("data-cat");
 
     // on vérifie s'il existe un prochain popup
     var test_actif = $(actualPopup).next().is(".popup");
+
+    // si une catégorie est selectionnée, on vérifie si il existe un projet suivant de ce type
+    if($(".filtres-filter-btn-active").attr("data-filter") != "all"){
+      var cat_filter = $(".filtres-filter-btn-active").attr("data-filter").split('.')[1];
+      var test_actif = ($(actualPopup).nextAll("[data-cat~="+cat_filter+"]:first").length > 0);
+    }
 
     if (!test_actif) {
       $(".projets").show();
@@ -188,7 +218,14 @@ $(document).ready(function () {
       }, 500);
       $(".bottom-menu").hide();
     } else {
-      var nextPopup = $(actualPopup).next();
+        if($(".filtres-filter-btn-active").attr("data-filter") != "all"){
+          var cat_filter = $(".filtres-filter-btn-active").attr("data-filter").split('.')[1];
+          var nextPopup = $(actualPopup).nextAll("[data-cat~="+cat_filter+"]:first");
+        }
+        else{
+          var nextPopup = $(actualPopup).next();
+        }
+        
       nextPopup.addClass("popup-actif").show(300).css("display", "flex");
     }
   }
@@ -203,7 +240,17 @@ $(document).ready(function () {
 
     $(actualPopup).removeClass("popup-actif").hide(300);
 
+    // on récupère la catégorie du projet
+    var cat_project = $(actualPopup).attr("data-cat");
+
+    // on vérifie s'il existe un précédent popup
     var test_actif = $(actualPopup).prev().is(".popup");
+
+    // si une catégorie est selectionnée, on vérifie si il existe un projet précédent de ce type
+    if($(".filtres-filter-btn-active").attr("data-filter") != "all"){
+      var cat_filter = $(".filtres-filter-btn-active").attr("data-filter").split('.')[1];
+      var test_actif = ($(actualPopup).prevAll("[data-cat~="+cat_filter+"]:first").length > 0);
+    }
 
     if (!test_actif) {
       $(".projets").show();
@@ -212,8 +259,15 @@ $(document).ready(function () {
       }, 500);
       $(".bottom-menu").hide();
     } else {
-      var previousPopup = $(actualPopup).prev();
-      previousPopup.addClass("popup-actif").show(300).css("display", "flex");
+      if($(".filtres-filter-btn-active").attr("data-filter") != "all"){
+        var cat_filter = $(".filtres-filter-btn-active").attr("data-filter").split('.')[1];
+        var previousPopup = $(actualPopup).prevAll("[data-cat~="+cat_filter+"]:first");
+      }
+      else{
+        var previousPopup = $(actualPopup).prev();
+      }
+      
+    previousPopup.addClass("popup-actif").show(300).css("display", "flex");
     }
   }
 
