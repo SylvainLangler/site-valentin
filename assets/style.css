@@ -103,6 +103,18 @@
     }
 }
 
+@media (max-width:500px){
+    #language{
+        right:30px
+    }
+}
+
+@media (max-width:350px){
+    #language{
+        right:20px;
+    }
+}
+
 #english,
 #francais {
     width: 30px;
