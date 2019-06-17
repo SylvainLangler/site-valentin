@@ -8,7 +8,6 @@ $(document).ready(function () {
     var numProject = $(this).attr("class").split(' ')[3];
 
     tab = $("#" + numProject).attr("class").split(' ');
-    console.log(tab);
 
     var str = "";
 
