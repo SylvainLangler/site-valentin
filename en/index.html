@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -10,27 +9,131 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/cv.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="icon" href="../assets/images/favicon.png" />
     <title>Valentin Luang Rath</title>
 </head>
 
 <body>
-  <div id="language">
-        <a href="#"><div id="english">EN</div></a>
+    <div id="language">
+        <div id="english">
+            <a href="#">EN</a>
+        </div>
         /
-        <a href="../index.html"><div id="francais">FR</div></a>
+        <div id="francais">
+            <a href="../index.html">FR</a>
+        </div>
     </div>
+    <div class="container-fluid">
+        <div class="menu">
+            <nav class="navbar justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#apropos">
+                            <h5>ABOUT</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio">
+                            <h5>PORTFOLIO</h5>
+                        </a>
+                    </li>
+                    <li class="nav-space hamburger" style="height:50px;width:50px;overflow:hidden;"><img
+                            style="height:50px;" src="../assets/images/burger.png">
+                    </li>
+                    <div class="hamburgerfond"><img src="../assets/images/burgerfond.png" /></div>
+                    <!-- <li class="nav-space logo">
+                        <img class="img-fluid" src="../assets/images/Logo.png">
+                    </li>-->
+                    <li id="titlevaldiv" class="nav-item">
+                        <h2 id="titleval">VALENTIN LUANG RATH</h2>
+                    </li>
 
-    
-    <div class="container portfolio">
-        <div class="row" id="portfolio">
-            <div class="title">
-                <h5 id="titlename">VALENTIN LUANG RATH</h5>
+                    <li class="nav-item">
+                        <a href="#cv">
+                            <h5>RESUME</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">
+                            <h5>CONTACT</h5>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+    <div class="menu2">
+
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#apropos" class="nav-link">
+                    <h4>ABOUT</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-link">
+                    <h4>PORTFOLIO</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#cv" class="nav-link">
+                    <h4>RESUME</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">
+                    <h4>CONTACT</h4>
+                </a>
+            </li>
+        </ul>
+        <div style="z-index: -10; position:absolute; top:0; width:680px;">
+            <img class="menu-sprite" src="../assets/images/menu-sprite2.png">
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="photo1">
+                <img class="img-fluid img_texture" src="../assets/images/texture_plus.png">
+                <img class="img-fluid mx-auto mt-5" src="../assets/images/aproposimage.jpg">
             </div>
         </div>
-        
+
+
+        <!--
+        <div class="row" id="apropos">
+            <div class="title">
+                <h5 class="text-center m-auto mt-4">A PROPOS</h5>
+            </div>
+        </div>-->
+        <div class="row" id="apropos">
+            <img class="titreimg" src="../assets/images/A%20PROPOS.png" />
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="../assets/images/apropos.png">
+            </div>
+            <div class="presentation col-lg-6">
+                <p>lorempspiaopzsd pazo pazdo pazod paozs pazod pao paodp oapd oazpdo apzdo apzod apzod pazod pazod
+                    apzod pazod pazod paod pao </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container portfolio">
+        <!--  <div class="row" id="portfolio">
+            <div class="title">
+                <h5>PORTFOLIO</h5>
+            </div>
+        </div>-->
+        <div class="row" id="portfolio">
+            <img class="titreimg" src="../assets/images/PORTFOLIO.png" />
+        </div>
         <div class="row justify-content-center">
             <div class="col text-center">
                 <div class="work">
@@ -48,25 +151,25 @@
                 </div>
             </div>
         </div>
-        
-                            <!-- PROJET 1 -->
+
+        <!-- PROJET 1 -->
 
         <div class="row popup justify-content-center projet1">
-            
+
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-            
-                 <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-             
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
             <div id="videoiframe" class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/330856614" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/330856614"
+                    allowfullscreen></iframe>
             </div>
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#910000;">WHEN I WILL BE OLDER</h1> 
+                <h1 class="titrepopup" style="color:#910000;">WHEN I WILL BE OLDER</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#910000;">PIXEL WEEKEND 2019 EDITION</h2>
@@ -74,106 +177,113 @@
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#910000">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-           
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="h3pj1">Short animated movie, created in 48h (jam) during the Pixel Weekend organized by the Corte Fab Lab from 15 to 17 January 2019.
-<br>
-                • Winner of 2019 Pixel Week end, for the best short animated movie<br>
+                <h3 class="textpopup" id="h3pj1">Short animated movie, created in 48h (jam) during the Pixel Weekend
+                    organized by the Corte Fab Lab from 15 to 17 January 2019.
+                    <br>
+                    • Winner of 2019 Pixel Week end, for the best short animated movie<br>
                     • Winner of best scenario award
-<br><br>
-                Napoleon, child plays with his figurine and imagines himself in his future life and his future choices : a peaceful life or a victorious life, on the battlefield...
-<br><br>
-                 • Illustration, animation and post production by Valentin Luang Rath, Julie Martinez and Océane Boquet<br>
- • Sound design, music and sound effect by Cyril Trigaux
-</h3>
+                    <br><br>
+                    Napoleon, child plays with his figurine and imagines himself in his future life and his future
+                    choices : a peaceful life or a victorious life, on the battlefield...
+                    <br><br>
+                    • Illustration, animation and post production by Valentin Luang Rath, Julie Martinez and Océane
+                    Boquet<br>
+                    • Sound design, music and sound effect by Cyril Trigaux
+                </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="pixel2" src="../assets/images/paper.jpg"/>
+                <img class="img-fluid" id="pixel2" src="../assets/images/paper.jpg" />
             </div>
-            
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt"><i>Slice up drawing before animation</i></h3>
             </div>
 
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-                            <!-- PROJET 2 -->
-        
+
+        <!-- PROJET 2 -->
+
         <div class="row popup justify-content-center projet2">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-            
-            
+
+
+
             <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-       
-            
-            
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="images">
-                <img class="img-fluid" id="smokeprojet2" src="../assets/images/thumbnail/It's%20just%20a%20cigarete%20photoshop%20mashup.jpg"/>
+                <img class="img-fluid" id="smokeprojet2"
+                    src="../assets/images/thumbnail/It's%20just%20a%20cigarete%20photoshop%20mashup.jpg" />
             </div>
-             
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#f59698;">"IT'S JUST A CIGARETTE"</h1> 
+                <h1 class="titrepopup" style="color:#f59698;">"IT'S JUST A CIGARETTE"</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#f59698;">PHOTOSHOP MASHUP</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#f59698">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="h3pj2">Mashup realized during my professional degree in Multimedia, audiovisual and graphic design.<br><br>
-                My inspiration was the artist Paul Fuentes, mainly for those pastel color, I added my personal touch with the noise and the vignette, to ‘break’ this flat aspect, and to give a vintage look.
-<br> <br>
-               The message in the mashup is clear, report the danger of the cigarette, to much present in France.
-<br><br><br>
-                <i>Inspirations : <br> <br>
-                <a target="_blank" href="https://www.youtube.com/watch?v=4TV_128Fz2g">• Titre : Princess Chelsea - The Cigarette Duet</a><br>
-                <a target="_blank" href="https://www.paulfuentesdesign.com/">• Style : Paul fuentes<br></a></i>
+                <h3 class="textpopup" id="h3pj2">Mashup realized during my professional degree in Multimedia,
+                    audiovisual and graphic design.<br><br>
+                    My inspiration was the artist Paul Fuentes, mainly for those pastel color, I added my personal touch
+                    with the noise and the vignette, to ‘break’ this flat aspect, and to give a vintage look.
+                    <br> <br>
+                    The message in the mashup is clear, report the danger of the cigarette, to much present in France.
+                    <br><br><br>
+                    <i>Inspirations : <br> <br>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=4TV_128Fz2g">• Titre : Princess Chelsea
+                            - The Cigarette Duet</a><br>
+                        <a target="_blank" href="https://www.paulfuentesdesign.com/">• Style : Paul fuentes<br></a></i>
                 </h3>
             </div>
             <div class="images">
-                <img class="img-fluid" id="smokeprojet2point1" src="../assets/images/gifprojet2.gif"/>
+                <img class="img-fluid" id="smokeprojet2point1" src="../assets/images/gifprojet2.gif" />
             </div>
-             
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt"><i>Layered animation</i></h3>
             </div>
-            
-            
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-                            <!-- PROJET 3 -->
+
+        <!-- PROJET 3 -->
 
         <div class="row popup justify-content-center projet3">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                 <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-          <!-- cd-image-container -->  
-            <div id="imagecomp">           
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+            <!-- cd-image-container -->
+            <div id="imagecomp">
                 <figure class="cd-image-container">
                     <img class="comp" src="../assets/images/projet33.png">
                     <span class="cd-image-label" data-type="original"></span>
@@ -185,685 +295,717 @@
                     </div>
 
                     <span class="cd-handle"></span>
-                </figure> 
-            </div>   
+                </figure>
+            </div>
             <!-- cd-image-container -->
-               
-                
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#add1ee;">T-SHIRT LP MD ATC</h1> 
+                <h1 class="titrepopup" style="color:#add1ee;">T-SHIRT LP MD ATC</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#add1ee;">ILLUSTRATOR DESIGN</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#add1ee">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup">Vector Illustation created during my professional degree in Multimedia, audiovisual and graphic design.
-<br><br>
-                We had to do a design, illustrating our professional degree, I choose to do it in isometric design with gradient color, some new trends in design that i wanted to try.
-<br> 
-               J'ai choisi un design en perspective Isométrique, avec des éléments en gradient design et un fond pastel monochromatique. 
-               
+                <h3 class="textpopup">Vector Illustation created during my professional degree in Multimedia,
+                    audiovisual and graphic design.
+                    <br><br>
+                    We had to do a design, illustrating our professional degree, I choose to do it in isometric design
+                    with gradient color, some new trends in design that i wanted to try.
+                    <br>
+                    J'ai choisi un design en perspective Isométrique, avec des éléments en gradient design et un fond
+                    pastel monochromatique.
+
                 </h3>
             </div>
-            
+
             <div id="h3pj3" class="images">
-                <img class="img-fluid" id="projet11-1" src="../assets/images/tshirt.jpg"/>
+                <img class="img-fluid" id="projet11-1" src="../assets/images/tshirt.jpg" />
             </div>
-             
-            
-            
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-        
-        
-                            <!-- PROJET 4 -->
+
+
+
+        <!-- PROJET 4 -->
 
         <div class="row popup justify-content-center projet4">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
+
             <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>  
-         
-               
-                
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#3ea6d2;">PRODUCT DESIGN</h1> 
+                <h1 class="titrepopup" style="color:#3ea6d2;">PRODUCT DESIGN</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#3ea6d2;">MAXNOMIC SEAT</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#3ea6d2">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
-            <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet4txt">During my apprenticeship at NEEDfoSEAT France, I worked on exclusive seat design, for the ‘Gamers Assembly 2019’ and available on the site www.needforseat.fr <br><br>
- I had to create an original seat to celebrate the 20th edition of the event. I did different design, and after they chose the design they prefered I prepared the technical document, to provide to the factory for the creation of the product.
 
-                    </h3>
-              </div>   
-           
-            <div class="images">
-                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/Document%20technique.jpg"/>
+
+            <div class="row justify-content-center" id="contentptftxt">
+                <h3 class="textpopup" id="projet4txt">During my apprenticeship at NEEDfoSEAT France, I worked on
+                    exclusive seat design, for the ‘Gamers Assembly 2019’ and available on the site www.needforseat.fr
+                    <br><br>
+                    I had to create an original seat to celebrate the 20th edition of the event. I did different design,
+                    and after they chose the design they prefered I prepared the technical document, to provide to the
+                    factory for the creation of the product.
+
+                </h3>
             </div>
-               
+
+            <div class="images">
+                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/Document%20technique.jpg" />
+            </div>
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt4"><i>Technical document
-</i></h3>
+                    </i></h3>
             </div>
-                  
-             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet4txt">Once the product delivered, I made the photo shoot for its promotion on social networks and for the website.
 
-                    </h3>
-              </div>   
-           
-            
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_1.jpg"/>
-            </div>
-            
-             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet4_3txt">I then created several visuals for social networks for its promotion with different designs, in our graphic charter and in the event’s one.
+            <div class="row justify-content-center" id="contentptftxt">
+                <h3 class="textpopup" id="projet4txt">Once the product delivered, I made the photo shoot for its
+                    promotion on social networks and for the website.
 
-                    </h3>
-              </div>   
-            
-            <div class="images">
-                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/r%C3%A9seaux%20sociaux%201.jpg"/>
+                </h3>
             </div>
-            
-              
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_1.jpg" />
+            </div>
+
+            <div class="row justify-content-center" id="contentptftxt">
+                <h3 class="textpopup" id="projet4_3txt">I then created several visuals for social networks for its
+                    promotion with different designs, in our graphic charter and in the event’s one.
+
+                </h3>
+            </div>
+
+            <div class="images">
+                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/r%C3%A9seaux%20sociaux%201.jpg" />
+            </div>
+
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt4"><i>NEEDforSEAT france : Slider visual et social network
-</i></h3>
+                    </i></h3>
             </div>
-            
-              <div class="images">
-                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/r%C3%A9seaux%20sociaux%202.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet4_1" src="../assets/images/projet4/r%C3%A9seaux%20sociaux%202.jpg" />
             </div>
-            
-              
+
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt4"><i>Gamers Assembly and NEEDforSEAT france : Slider visual
-</i></h3>
+                    </i></h3>
             </div>
-            
-             <div class="row justify-content-center" id="contentptftxt">
+
+            <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="projet4_4txt">More pictures of the shooting....
 
-                    </h3>
-              </div> 
-            
-         
-            
+                </h3>
+            </div>
+
+
+
             <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_1.jpg"/>
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_1.jpg" />
+                </div>
             </div>
-            </div>
-                
+
             <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_2.jpg"/>
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_2.jpg" />
+                </div>
             </div>
-            </div>    
-            
-              <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_3.jpg"/>
+
+            <div class="zae">
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_3.jpg" />
+                </div>
             </div>
-            </div>    
-            
-              <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_4.jpg"/>
+
+            <div class="zae">
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_4.jpg" />
+                </div>
             </div>
-            </div>    
-            
-              <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_5.jpg"/>
+
+            <div class="zae">
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_5.jpg" />
+                </div>
             </div>
-            </div>    
-            
-              <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_6.jpg"/>
+
+            <div class="zae">
+                <div class="images">
+                    <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_6.jpg" />
+                </div>
             </div>
-            </div>    
-            
+
             <div class="lastimage">
-            <div class="zae">
-            <div class="images">
-                <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_7.jpg"/>
+                <div class="zae">
+                    <div class="images">
+                        <img class="img-fluid" id="projet4_2" src="../assets/images/projet4/Gamers_Assembly_7.jpg" />
+                    </div>
+                </div>
             </div>
-            </div>    </div> 
-                                                                                                            
-         
-          
-            
+
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 4 -->
-         <!-- PROJET 5 -->
-        
+
+        <!-- FIN PROJET 4 -->
+        <!-- PROJET 5 -->
+
         <div class="row popup justify-content-center projet5">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-               <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-            
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
             <div class="images">
-                <img class="img-fluid" id="projet5-1" src="../assets/images/projet5-1.png"/>
+                <img class="img-fluid" id="projet5-1" src="../assets/images/projet5-1.png" />
             </div>
-             
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#005245;">"FISHEYE"</h1> 
+                <h1 class="titrepopup" style="color:#005245;">"FISHEYE"</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#005245;">PHOTOMONTAGE</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#005245">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
-            <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet5txt">This visual was made during DUT (Technical and university degree). The aim was to take a portrait of one of the two people in the group, and based on an existing work, create a poster denouncing society problem. <br><br>I realized the photomontage on Photoshop, while my partner served as a model.
 
-                 We have chosen to denounce overfishing, a too much forgotten cause.
-Our inspiration for this project is the artist Flora Borsi, specialized in self-portraits, who has taken a series of photos with this eye on eye superposition with animals.
-<br><br> <br>
-                <i>Credits and inspirations: <br> <br>
-                • Photo credits: Nicolas Brante<br>
-                <a target="_blank" href="https://www.floraborsi.com/">• Inspiration : Flora Borsi<br></a></i>
-                 <div id="contentptf" class="row justify-content-center">
-                <h3 class="italictxtpj5"><i>Note: 2 fish are present in this picture (If you look carefully :)</i></h3>
-            </div>
+
+            <div class="row justify-content-center" id="contentptftxt">
+                <h3 class="textpopup" id="projet5txt">This visual was made during DUT (Technical and university degree).
+                    The aim was to take a portrait of one of the two people in the group, and based on an existing work,
+                    create a poster denouncing society problem. <br><br>I realized the photomontage on Photoshop, while
+                    my partner served as a model.
+
+                    We have chosen to denounce overfishing, a too much forgotten cause.
+                    Our inspiration for this project is the artist Flora Borsi, specialized in self-portraits, who has
+                    taken a series of photos with this eye on eye superposition with animals.
+                    <br><br> <br>
+                    <i>Credits and inspirations: <br> <br>
+                        • Photo credits: Nicolas Brante<br>
+                        <a target="_blank" href="https://www.floraborsi.com/">• Inspiration : Flora Borsi<br></a></i>
+                    <div id="contentptf" class="row justify-content-center">
+                        <h3 class="italictxtpj5"><i>Note: 2 fish are present in this picture (If you look carefully
+                                :)</i></h3>
+                    </div>
                 </h3>
             </div>
-          
-             
+
+
 
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-             <!-- FIN PROJET 5 -->
-        
-        
-               <!-- PROJET 6 -->
+
+        <!-- FIN PROJET 5 -->
+
+
+        <!-- PROJET 6 -->
 
         <div class="row popup justify-content-center projet6">
-        <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-             <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#cba7a7;">GOÛT D'IDÉES</h1> 
+                <h1 class="titrepopup" style="color:#cba7a7;">GOÛT D'IDÉES</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#cba7a7;">VECTOR ILLUSTRATIONS</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#cba7a7">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet7txt"> Here is a selection of pictograms created during a 3-week internship at the creative agency <i>Goût d'idées.</i>
-              My objective was to illustrate creative and rather abstract concepts of the founder of the Agency, Rémi Sabouraud.<br>
-            
+                <h3 class="textpopup" id="projet7txt"> Here is a selection of pictograms created during a 3-week
+                    internship at the creative agency <i>Goût d'idées.</i>
+                    My objective was to illustrate creative and rather abstract concepts of the founder of the Agency,
+                    Rémi Sabouraud.<br>
+
                 </h3>
             </div>
-            
+
             <div class="rowa">
-                    <div class="col-sm" id="goutdidees">
-                              <div class="images"> <img id="projet6-1" src="../assets/images/projet6/divin%20id%C3%A9es.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>Divin’idées</i></h3>
+                <div class="col-sm" id="goutdidees">
+                    <div class="images"> <img id="projet6-1" src="../assets/images/projet6/divin%20id%C3%A9es.jpg" />
                     </div>
+                    <h3 class="italictxtpj6"><i>Divin’idées</i></h3>
+                </div>
             </div>
-               
-                
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Bedstorming.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>Bedstorming </i></h3>
+
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Bedstorming.jpg" /></div>
+                    <h3 class="italictxtpj6"><i>Bedstorming </i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images"> <img id="projet6-1" src="../assets/images/projet6/The%20Remi.jpg" /></div>
+                    <h3 class="italictxtpj6"><i>The REMI</i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Arles%20is%20real.jpg" />
                     </div>
+                    <h3 class="italictxtpj6"><i>Origin’Arles</i></h3>
+                </div>
             </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images"> <img id="projet6-1" src="../assets/images/projet6/The%20Remi.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>The REMI</i></h3>
-                    </div>
+
+            <div class="goutdidee">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images"> <img id="projet6-1"
+                            src="../assets/images/projet6/Reveilleur%20de%20nuit.jpg" /></div>
+                    <h3 class="italictxtpj6"><i>Réveilleur de nuit </i></h3>
+                </div>
             </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Arles%20is%20real.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>Origin’Arles</i></h3>
-                    </div>
-            </div>
-            
-              <div class="goutdidee">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Reveilleur%20de%20nuit.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>Réveilleur de nuit </i></h3>
-                    </div>
-            </div>
-         
+
             <div class="lastimage">
-               <div class="goutdidee">
-                      <div class="col-sm" id="goutdidees">
-                          <div class="images"> <img id="projet6-1" src="../assets/images/projet6/Folie%20cr%C3%A9ative.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>Folie créative </i></h3>
+                <div class="goutdidee">
+                    <div class="col-sm" id="goutdidees">
+                        <div class="images"> <img id="projet6-1"
+                                src="../assets/images/projet6/Folie%20cr%C3%A9ative.jpg" /></div>
+                        <h3 class="italictxtpj6"><i>Folie créative </i></h3>
                     </div>
+                </div>
             </div>
-            </div>
-        
-            
-      
-         
-            
+
+
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 6 -->
-        
-        
-        
-         <!-- PROJET 7 -->
+
+        <!-- FIN PROJET 6 -->
+
+
+
+        <!-- PROJET 7 -->
 
         <div class="row popup justify-content-center projet7">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-              <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#882319;">PORTFOLIO v1.0</h1> 
+                <h1 class="titrepopup" style="color:#882319;">PORTFOLIO v1.0</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#882319;">WEBDESIGN</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#882319">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet7txt"> First version of my portfolio site developped in HTML, CSS and JS animations.<br>
-                 It was based on illustrations, inspired by the game <i>Alice Madness Return</i>, the game <i>Don't Strave</i> and the <i>Burton</i> style in general.   <br>
-              I didn't finish it because of responsive design problems, due to the many bitmaps images.<br>
-              For this v2 of my portfolio, I decided to keep this "drawing" side with spritesheet animated in a traditional frame by frame way.
+                <h3 class="textpopup" id="projet7txt"> First version of my portfolio site developped in HTML, CSS and JS
+                    animations.<br>
+                    It was based on illustrations, inspired by the game <i>Alice Madness Return</i>, the game <i>Don't
+                        Strave</i> and the <i>Burton</i> style in general. <br>
+                    I didn't finish it because of responsive design problems, due to the many bitmaps images.<br>
+                    For this v2 of my portfolio, I decided to keep this "drawing" side with spritesheet animated in a
+                    traditional frame by frame way.
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet7-1" src="../assets/images/projet7/website%20v1-1.jpg"/>
+                <img class="img-fluid" id="projet7-1" src="../assets/images/projet7/website%20v1-1.jpg" />
             </div>
-               <div id="contentptf" class="row justify-content-center">
-                <h3 class="italictxtpj7"><i>The Heart was animated in .js and the font had a spritesheet triggered on mouseover.</i></h3>
+            <div id="contentptf" class="row justify-content-center">
+                <h3 class="italictxtpj7"><i>The Heart was animated in .js and the font had a spritesheet triggered on
+                        mouseover.</i></h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet7-2" src="../assets/images/projet7/website%20v1-2.jpg"/>
+                <img class="img-fluid" id="projet7-2" src="../assets/images/projet7/website%20v1-2.jpg" />
             </div>
-            
+
             <div class="lastimage">
-            <div class="images">
-                <img class="img-fluid" id="projet7-3" src="../assets/images/projet7/website%20v1-3.jpg"/>
-            </div></div>
-        
-      
-         
-            
+                <div class="images">
+                    <img class="img-fluid" id="projet7-3" src="../assets/images/projet7/website%20v1-3.jpg" />
+                </div>
+            </div>
+
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 7 -->
-        
-        
-                            <!-- PROJET 8 -->
+
+        <!-- FIN PROJET 7 -->
+
+
+        <!-- PROJET 8 -->
 
         <div class="row popup justify-content-center projet8">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#000000;">TOURS BY NIGHT</h1> 
+                <h1 class="titrepopup" style="color:#000000;">TOURS BY NIGHT</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#000000;">NIGHT PHOTOGRAPHY</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#000000">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet8txt"> An album of some photos taken during my apprenticeship in Tours. They are part of my first pictures, made a few weeks after the purchase of my camera.<br><br>
-                    
-                • camera : Reflex Canon EOS 200D<br>
-                • Lens : EF-S 18-55 mm f/4.5-5.6
+                <h3 class="textpopup" id="projet8txt"> An album of some photos taken during my apprenticeship in Tours.
+                    They are part of my first pictures, made a few weeks after the purchase of my camera.<br><br>
+
+                    • camera : Reflex Canon EOS 200D<br>
+                    • Lens : EF-S 18-55 mm f/4.5-5.6
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-2" src="../assets/images/projet8/tours_nuit_3.jpg"/>
+                <img class="img-fluid" id="projet8-2" src="../assets/images/projet8/tours_nuit_3.jpg" />
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet8/tours_nuit_2.jpg"/>
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet8/tours_nuit_2.jpg" />
             </div>
-            
-            
+
+
             <div class="images">
-                <img class="img-fluid" id="projet8-1" src="../assets/images/projet8/tours_nuit_1.jpg"/>
+                <img class="img-fluid" id="projet8-1" src="../assets/images/projet8/tours_nuit_1.jpg" />
             </div>
-             
-        
+
+
             <div class="images">
-                <img class="img-fluid" id="projet8-4" src="../assets/images/projet8/tours_nuit_4.jpg"/>
+                <img class="img-fluid" id="projet8-4" src="../assets/images/projet8/tours_nuit_4.jpg" />
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-5" src="../assets/images/projet8/tours_nuit_5.jpg"/>
+                <img class="img-fluid" id="projet8-5" src="../assets/images/projet8/tours_nuit_5.jpg" />
             </div>
-          
+
             <div class="lastimage">
-            <div class="images">
-                <img class="img-fluid" id="projet8-6" src="../assets/images/projet8/tours_nuit_6.jpg"/>
-                </div></div>
-          
-            
+                <div class="images">
+                    <img class="img-fluid" id="projet8-6" src="../assets/images/projet8/tours_nuit_6.jpg" />
+                </div>
+            </div>
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 8 -->
-        
-        
+
+        <!-- FIN PROJET 8 -->
+
+
         <!-- PROJET 16 -->
 
         <div class="row popup justify-content-center projet9">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-               <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#f5e944;">MAGDALENA</h1> 
+                <h1 class="titrepopup" style="color:#f5e944;">MAGDALENA</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#f5e944;">TYPOGRAPHY SPECIMEN</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#f5e944">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="projet8txt"> A type font made during my professional degree in Corte.<br><br>
-                    
-                Created on the website : <i>Prototypo</i> according to instructions given on <i>TypeCooker</i>.<br><br><br>
-                
-                Instructions : <br></h3>
-                    <h3 class="textpopup" id="list">
-                    • Weight : Semi Bold<br> 
-                    • Ascender : Longer than normal<br> 
-                    • Stems : Straight<br> 
-                    • Contrast Amount : Visible<br> 
-                    • Width : Normal<br> 
-                    • Stroke ending : No serif<br> 
-                    • Descender : Shorter than normal<br> 
-                    </h3>
-                  
-                    
-                
+
+                    Created on the website : <i>Prototypo</i> according to instructions given on
+                    <i>TypeCooker</i>.<br><br><br>
+
+                    Instructions : <br></h3>
+                <h3 class="textpopup" id="list">
+                    • Weight : Semi Bold<br>
+                    • Ascender : Longer than normal<br>
+                    • Stems : Straight<br>
+                    • Contrast Amount : Visible<br>
+                    • Width : Normal<br>
+                    • Stroke ending : No serif<br>
+                    • Descender : Shorter than normal<br>
+                </h3>
+
+
+
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-2" src="../assets/images/projet16/Magazine_Mockup_1_1.jpg"/>
+                <img class="img-fluid" id="projet8-2" src="../assets/images/projet16/Magazine_Mockup_1_1.jpg" />
             </div>
-            
-             <div class="lastimage">
-            <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet16/Magazine_Mockup_2_1.jpg"/>
-                 </div></div>
-            
-          
-            
+
+            <div class="lastimage">
+                <div class="images">
+                    <img class="img-fluid" id="projet8-3" src="../assets/images/projet16/Magazine_Mockup_2_1.jpg" />
+                </div>
+            </div>
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 16 -->
-           
-                            <!-- PROJET 10 -->
+
+        <!-- FIN PROJET 16 -->
+
+        <!-- PROJET 10 -->
 
         <div class="row popup justify-content-center projet10">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#2589ac;">CORSICA TOUR</h1> 
+                <h1 class="titrepopup" style="color:#2589ac;">CORSICA TOUR</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#2589ac;">LANDSCAPE PHOTOGRAPHY</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#2589ac">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet8txt"> An album of some photographs of Corsica, taken during my apprenticeship in Corte. <br>
-                  
-            
-                    
-              <br><br>  • Camera : Reflex Canon EOS 200D<br>
-                • Lens : EF-S 18-55 mm f/4.5-5.6
+                <h3 class="textpopup" id="projet8txt"> An album of some photographs of Corsica, taken during my
+                    apprenticeship in Corte. <br>
+
+
+
+                    <br><br> • Camera : Reflex Canon EOS 200D<br>
+                    • Lens : EF-S 18-55 mm f/4.5-5.6
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet10-1" src="../assets/images/projet10/Corse%20photo%201.jpg"/>
+                <img class="img-fluid" id="projet10-1" src="../assets/images/projet10/Corse%20photo%201.jpg" />
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet10-2" src="../assets/images/projet10/Corse%20photo%202.jpg"/>
+                <img class="img-fluid" id="projet10-2" src="../assets/images/projet10/Corse%20photo%202.jpg" />
             </div>
-            
-            
+
+
             <div class="images">
-                <img class="img-fluid" id="projet10-3" src="../assets/images/projet10/Corse%20photo%203.jpg"/>
+                <img class="img-fluid" id="projet10-3" src="../assets/images/projet10/Corse%20photo%203.jpg" />
             </div>
-             
-        
+
+
             <div class="images">
-                <img class="img-fluid" id="projet10-4" src="../assets/images/projet10/Corse%20photo%204.jpg"/>
+                <img class="img-fluid" id="projet10-4" src="../assets/images/projet10/Corse%20photo%204.jpg" />
             </div>
-            
-              <div class="lastimage">
-            <div class="images">
-                <img class="img-fluid" id="projet10-5" src="../assets/images/projet10/Corse%20photo%205.jpg"/>
-                  </div></div>
-          
-     
-          
-            
+
+            <div class="lastimage">
+                <div class="images">
+                    <img class="img-fluid" id="projet10-5" src="../assets/images/projet10/Corse%20photo%205.jpg" />
+                </div>
+            </div>
+
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 10 -->
-        
-        
-               <!-- PROJET 11 -->
+
+        <!-- FIN PROJET 10 -->
+
+
+        <!-- PROJET 11 -->
 
         <div class="row popup justify-content-center projet11">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                 <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#e48965;">DREAMHACK BACKSTAGE</h1> 
+                <h1 class="titrepopup" style="color:#e48965;">DREAMHACK BACKSTAGE</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#e48965;">EVENT PHOTOGRAPHY</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#e48965">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="projet8txt"> An album of some photoS taken during the Dreamhack Tours 2019.
-                I was working in backstage and took some pictures during my spare time.<br><br>
-                    
-                • Camera : Reflex Canon EOS 200D<br>
-                • Lens : EF-S 18-55 mm f/4.5-5.6
+                    I was working in backstage and took some pictures during my spare time.<br><br>
+
+                    • Camera : Reflex Canon EOS 200D<br>
+                    • Lens : EF-S 18-55 mm f/4.5-5.6
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet11-1" src="../assets/images/projet11/dreamhack backstage 1.jpg"/>
+                <img class="img-fluid" id="projet11-1" src="../assets/images/projet11/dreamhack backstage 1.jpg" />
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet11-2" src="../assets/images/projet11/dreamhack backstage 2.jpg"/>
+                <img class="img-fluid" id="projet11-2" src="../assets/images/projet11/dreamhack backstage 2.jpg" />
             </div>
-            
-            
+
+
             <div class="images">
-                <img class="img-fluid" id="projet11-3" src="../assets/images/projet11/dreamhack backstage 3.jpg"/>
+                <img class="img-fluid" id="projet11-3" src="../assets/images/projet11/dreamhack backstage 3.jpg" />
             </div>
-             
-        
+
+
             <div class="images">
-                <img class="img-fluid" id="projet11-4" src="../assets/images/projet11/dreamhack backstage 4.jpg"/>
+                <img class="img-fluid" id="projet11-4" src="../assets/images/projet11/dreamhack backstage 4.jpg" />
             </div>
-            
+
             <div id="aze">
-            <div class="images">
-                <img class="img-fluid" id="projet11-5" src="../assets/images/projet11/dreamhack backstage 5.jpg"/>
+                <div class="images">
+                    <img class="img-fluid" id="projet11-5" src="../assets/images/projet11/dreamhack backstage 5.jpg" />
+                </div>
             </div>
-          </div>
-        
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 11 -->
 
-         <!-- PROJET 12 -->
+        <!-- FIN PROJET 11 -->
+
+        <!-- PROJET 12 -->
 
         <div class="row popup justify-content-center projet12">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                 <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
             <div class="embed-responsive embed-responsive-16by9">
-                 <iframe src="https://player.vimeo.com/video/339777226"allowfullscreen></iframe>
+                <iframe src="https://player.vimeo.com/video/339777226" allowfullscreen></iframe>
             </div>
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#29135f;">CORTE 2.0</h1> 
+                <h1 class="titrepopup" style="color:#29135f;">CORTE 2.0</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#29135f;">MOTION DESIGN</h2>
@@ -871,25 +1013,27 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#29135f">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
+
 
             <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="h3pj1">Motion Design, Corte 2.0<br><br>
-                Video made during my Professional degree in Corte, on the theme <i>Corte 2.0.</i><br>
-                My challenge was to make this video on the phone (not having my camera at the time). 
-             Note that my phone, which I will not named, films in poor quality (720p, very noisy video and poorly stabilized).<br>
-              From this problem I made it a constraint, and so I chose this style <i> "aesthetic"</i> in order to make my image even more mediocre (A way to hide this ulgy image :) <br><br>
-                <i>Music : <br> 
-                   Daft Punk - Veridis Quo (Thomas Barrandon Remix)</i><br>
+                    Video made during my Professional degree in Corte, on the theme <i>Corte 2.0.</i><br>
+                    My challenge was to make this video on the phone (not having my camera at the time).
+                    Note that my phone, which I will not named, films in poor quality (720p, very noisy video and poorly
+                    stabilized).<br>
+                    From this problem I made it a constraint, and so I chose this style <i> "aesthetic"</i> in order to
+                    make my image even more mediocre (A way to hide this ulgy image :) <br><br>
+                    <i>Music : <br>
+                        Daft Punk - Veridis Quo (Thomas Barrandon Remix)</i><br>
                 </h3>
             </div>
-            
-           <!-- cd-image-container -->  
-            <div id="imagecomp2">           
+
+            <!-- cd-image-container -->
+            <div id="imagecomp2">
                 <figure class="cd-image-container">
                     <img class="comp" src="../assets/images/projet12/goutte1.jpg">
                     <span class="cd-image-label" data-type="original"></span>
@@ -899,44 +1043,44 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
                         <img class="comp" src="../assets/images/projet12/goutte2.jpg">
                         <span class="cd-image-label" data-type="modified"></span>
                     </div>
-                    
-                    
+
+
 
                     <span class="cd-handle"></span>
-                </figure> 
-            </div>   
+                </figure>
+            </div>
             <!-- cd-image-container -->
-            
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt"><i>color correction and chromatic aberration</i></h3>
             </div>
-            
+
 
 
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-           <!-- FIN PROJET 12 -->
-        
-        
-        
-        
-        
-         <!-- PROJET 13 -->
+
+        <!-- FIN PROJET 12 -->
+
+
+
+
+
+        <!-- PROJET 13 -->
 
         <div class="row popup justify-content-center projet13">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
+
             <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-             <div class="embed-responsive embed-responsive-16by9">
-                 <iframe src="https://player.vimeo.com/video/340057260"allowfullscreen></iframe>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/340057260" allowfullscreen></iframe>
             </div>
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#172c30;">ANIMATED OVERLAYS</h1> 
+                <h1 class="titrepopup" style="color:#172c30;">ANIMATED OVERLAYS</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#172c30;">MOTION DESIGN</h2>
@@ -944,230 +1088,250 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#172c30">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
-         
+
+
+
 
 
             <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="h3pj1">Overlay Stream Dreamhack Tours 2019<br><br>
-                For the Dreamhack Tours 2019 I took care of all the <i>in games</i> Overlays and <i>general</i> overlays. I worked in collaboration with the control room, which had to deal with adding real time content, thanks to the software <i>Xpression</i>, the animations (the Countdown in the video above), and live transitions as well.<br>
-                 
+                    For the Dreamhack Tours 2019 I took care of all the <i>in games</i> Overlays and <i>general</i>
+                    overlays. I worked in collaboration with the control room, which had to deal with adding real time
+                    content, thanks to the software <i>Xpression</i>, the animations (the Countdown in the video above),
+                    and live transitions as well.<br>
+
                 </h3>
             </div>
-            
-              <div class="zae">
-                <img class="img-fluid" src="../assets/images/projet13/texte.gif"/>
+
+            <div class="zae">
+                <img class="img-fluid" src="../assets/images/projet13/texte.gif" />
             </div>
-           
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="h3pj1">Example of animation in gif quality (normally exported as.mov, 59.94 frames per second). The animation is fast, because the duration of appearance is managed downstream on Xpression by the control room, I just had to avoid blurring the movement, so that they can integrate the text correctly.
-                 
+                <h3 class="textpopup" id="h3pj1">Example of animation in gif quality (normally exported as.mov, 59.94
+                    frames per second). The animation is fast, because the duration of appearance is managed downstream
+                    on Xpression by the control room, I just had to avoid blurring the movement, so that they can
+                    integrate the text correctly.
+
                 </h3>
             </div>
-            
-              <div id="exemple2" class="embed-responsive embed-responsive-16by9">
-                 <iframe src="https://player.vimeo.com/video/340065013"allowfullscreen></iframe>
+
+            <div id="exemple2" class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/340065013" allowfullscreen></iframe>
             </div>
-            
-                
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="h3pj1"><i>Example of some animations during Dreamhack Tours 2019</i><br><br><br><br><br>
-                Here are some other overlays, in.jpg version with substitute content:
-                 
+                <h3 class="textpopup" id="h3pj1"><i>Example of some animations during Dreamhack Tours
+                        2019</i><br><br><br><br><br>
+                    Here are some other overlays, in.jpg version with substitute content:
+
                 </h3>
             </div>
-          
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/CountdownSchedule.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/CountdownSchedule.jpg" />
             </div>
-            
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20%20info.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20%20info.jpg" />
             </div>
-            
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20partners.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20partners.jpg" />
             </div>
-            
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20pause%20tactique.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20pause%20tactique.jpg" />
             </div>
-            
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20score.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20score.jpg" />
             </div>
-            
+
             <div class="lastimage">
-               <div class="images">
-                <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20team.jpg"/>
-            </div></div>
+                <div class="images">
+                    <img class="img-fluid" id="projet13-6" src="../assets/images/projet13/L3%20team.jpg" />
+                </div>
+            </div>
 
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-           <!-- FIN PROJET 13 -->
-        
-        
-             <!-- PROJET 6 -->
+
+        <!-- FIN PROJET 13 -->
+
+
+        <!-- PROJET 6 -->
 
         <div class="row popup justify-content-center projet14">
-        <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-             <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#1d9ad7;">LOGO DESIGN</h1> 
+                <h1 class="titrepopup" style="color:#1d9ad7;">LOGO DESIGN</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#1d9ad7;">DREAMHACK TOURS 2019</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#1d9ad7">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet14txt"> Here is a selection of logos created for Dreamhack Tours 2019. They were present on stage, on social networks, on the winners' trophies and in all the graphic elements present on site.<br><br>
-                    
+                <h3 class="textpopup" id="projet14txt"> Here is a selection of logos created for Dreamhack Tours 2019.
+                    They were present on stage, on social networks, on the winners' trophies and in all the graphic
+                    elements present on site.<br><br>
+
                     Photos credit : <i>Guillaume Anjoran</i> et <i>Aurelien Mignerat</i><br>
-                    
+
                     Design of the print element and trophy : <i>Louis Bavois</i><br><br>
-                    
-            
-                    
-            The first four were validated and used, while the last four could not be used due to the cancellation of the game.
-            
+
+
+
+                    The first four were validated and used, while the last four could not be used due to the
+                    cancellation of the game.
+
                 </h3>
             </div>
-            
+
             <div class="rowa">
-                    <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/2000px-logo-lol.png"/></div>
-                            <h3 class="italictxtpj6"><i>League of legends</i></h3>
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/2000px-logo-lol.png" />
                     </div>
+                    <h3 class="italictxtpj6"><i>League of legends</i></h3>
+                </div>
             </div>
-               
-                
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/logo-hearthstone-600px.png"/></div>
-                            <h3 class="italictxtpj6"><i>Hearthstone </i></h3>
+
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14"
+                            src="../assets/images/projet14/logo-hearthstone-600px.png" /></div>
+                    <h3 class="italictxtpj6"><i>Hearthstone </i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/final.png" /></div>
+                    <h3 class="italictxtpj6"><i>Overwatch</i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14"
+                            src="../assets/images/projet14/logo-SSBU-black-2000px.png" /></div>
+                    <h3 class="italictxtpj6"><i>Super Smash Bros</i></h3>
+                </div>
+            </div>
+
+
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/rocket%20league.png" />
                     </div>
+                    <h3 class="italictxtpj6"><i>Rocket league</i></h3>
+                </div>
             </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/final.png"/></div>
-                            <h3 class="italictxtpj6"><i>Overwatch</i></h3>
+
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/PNG%202019.png" /></div>
+                    <h3 class="italictxtpj6"><i>Fifa 19 </i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/png.png" /></div>
+                    <h3 class="italictxtpj6"><i>Counter Strike : GO</i></h3>
+                </div>
+            </div>
+
+            <div class="rowa">
+                <div class="col-sm" id="goutdidees">
+                    <div class="images2"> <img id="projet_14" src="../assets/images/projet14/pubg_logo_2000x.jpg" />
                     </div>
+                    <h3 class="italictxtpj6"><i>PUBG</i></h3>
+                </div>
             </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/logo-SSBU-black-2000px.png"/></div>
-                            <h3 class="italictxtpj6"><i>Super Smash Bros</i></h3>
-                    </div>
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet11-4"
+                    src="../assets/images/projet14/DHFR19_AurelienMignerat-7989.jpg" />
             </div>
-            
-           
-             
-                  <div class="rowa">
-                    <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/rocket%20league.png"/></div>
-                            <h3 class="italictxtpj6"><i>Rocket league</i></h3>
-                    </div>
-            </div>
-               
-                
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/PNG%202019.png"/></div>
-                            <h3 class="italictxtpj6"><i>Fifa 19 </i></h3>
-                    </div>
-            </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/png.png"/></div>
-                            <h3 class="italictxtpj6"><i>Counter Strike : GO</i></h3>
-                    </div>
-            </div>
-            
-              <div class="rowa">
-                      <div class="col-sm" id="goutdidees">
-                              <div class="images2"> <img id="projet_14" src="../assets/images/projet14/pubg_logo_2000x.jpg"/></div>
-                            <h3 class="italictxtpj6"><i>PUBG</i></h3>
-                    </div>
-            </div>
-            
-            
-              <div class="images">
-                <img class="img-fluid" id="projet11-4" src="../assets/images/projet14/DHFR19_AurelienMignerat-7989.jpg"/>
-            </div>
-               <div id="contentptf" class="row justify-content-center">
+            <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt14"><i>Use of logos on the main stage</i></h3>
             </div>
 
-               
-              <div class="images">
-                <img class="img-fluid" id="projet11-4" src="../assets/images/projet14/DHFR2019_GuillaumeANJORAN_2.44.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet11-4"
+                    src="../assets/images/projet14/DHFR2019_GuillaumeANJORAN_2.44.jpg" />
             </div>
-            
-               <div id="contentptf" class="row justify-content-center">
+
+            <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt14"><i>Use for the winners' trophies</i></h3>
             </div>
 
-               
-              <div class="images">
-                <img class="img-fluid" id="projet11-4" src="../assets/images/projet14/DHFR2019_GuillaumeANJORAN_4.jpg"/>
+
+            <div class="images">
+                <img class="img-fluid" id="projet11-4"
+                    src="../assets/images/projet14/DHFR2019_GuillaumeANJORAN_4.jpg" />
             </div>
-            
-          
-                <div id="contentptf" class="row justify-content-center">
+
+
+            <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt141"><i>Use for LAN party signage</i></h3>
             </div>
-            
-      
-         
-            
+
+
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 6 -->
-        
-        
-                     <!-- PROJET 15 -->
+
+        <!-- FIN PROJET 6 -->
+
+
+        <!-- PROJET 15 -->
 
         <div class="row popup justify-content-center projet15">
-           <div class="croix">
+            <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-               <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/339866821" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/339866821"
+                    allowfullscreen></iframe>
             </div>
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#a7e35f;">BYOP ADVERTISING</h1> 
+                <h1 class="titrepopup" style="color:#a7e35f;">BYOP ADVERTISING</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#a7e35f;">3D ANIMATION</h2>
@@ -1175,222 +1339,228 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#a7e35f">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptftxt">
                 <h3 class="textpopup" id="h3pj1">3D animation made on cinema4D for a fictional ad <i>Byop.</i><br><br>
                     Project realized during the first year of my DUT in Multimedia, Computing, Audiovisual studies.<br>
-                   The subject was to make a fictional advertisement for a new product <i>Yoplait</i>, based on an early market study. I took care of the 3D modeling part (yogurt pot and packaging), texturing, 3D animation and editing.
-                    
+                    The subject was to make a fictional advertisement for a new product <i>Yoplait</i>, based on an
+                    early market study. I took care of the 3D modeling part (yogurt pot and packaging), texturing, 3D
+                    animation and editing.
+
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="pixel2" src="../assets/images/projet15/Pub%20Yoplait%201.png"/>
+                <img class="img-fluid" id="pixel2" src="../assets/images/projet15/Pub%20Yoplait%201.png" />
             </div>
-            
+
             <div id="contentptf" class="row justify-content-center">
                 <h3 class="italictxt"><i>Modeling before texturing</i></h3>
             </div>
 
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-           <!-- FIN PROJET 15 -->
-        
-                    
-        
-        
-                            <!-- PROJET 17 -->
+
+        <!-- FIN PROJET 15 -->
+
+
+
+
+        <!-- PROJET 17 -->
 
         <div class="row popup justify-content-center projet17">
             <div class="croix">
                 <img src="../assets/images/flacheclose.png">
             </div>
-            
-                <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
-           
-           <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
-         
-               
-                
+
+            <div class="btn-nav next"><img id="flecheright" src="../assets/images/flacheright.png"></div>
+
+            <div class="btn-nav previous"><img id="flecheleft" src="../assets/images/flacheleft.png"></div>
+
+
+
             <div class="row justify-content-center" id="contentptf">
-                <h1 class="titrepopup" style="color:#000000;">SOCIAL NETWORKS</h1> 
+                <h1 class="titrepopup" style="color:#000000;">SOCIAL NETWORKS</h1>
             </div>
             <div class="row justify-content-center" id="contentptf">
                 <h2 class="soustitrepopup" style="color:#000000;">VISUALS FOR NEEDFORSEAT FRANCE</h2>
             </div>
-            
+
             <div class="row justify-content-center" id="contentptf">
                 <svg id="stroke" height="8">
                     <g fill="none" stroke="#000000">
-                         <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
+                        <path d="M5 5 l300 0" stroke-width="0.2vw"></path>
                     </g>
                 </svg>
             </div>
-            
-            
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet8txt"> Some examples of visuals created for Needforseat France's social networks.
+                <h3 class="textpopup" id="projet8txt"> Some examples of visuals created for Needforseat France's social
+                    networks.
                 </h3>
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-2" src="../assets/images/projet17/SIZE-MIG.jpg"/>
+                <img class="img-fluid" id="projet8-2" src="../assets/images/projet17/SIZE-MIG.jpg" />
             </div>
-            
+
             <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/BAC_2.1.jpg"/>
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/BAC_2.1.jpg" />
             </div>
-            
-            
+
+
             <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/pro-chief-bwe.jpg"/>
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/pro-chief-bwe.jpg" />
             </div>
-             
-        
+
+
             <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/avantage_pr%C3%A9co.jpg"/>
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/avantage_pr%C3%A9co.jpg" />
             </div>
-            
-            
-         
-            
+
+
+
+
             <div class="row justify-content-center" id="contentptftxt">
-                <h3 class="textpopup" id="projet17txt">Some examples of visuals created for the Slider of the Needforseat France website.
+                <h3 class="textpopup" id="projet17txt">Some examples of visuals created for the Slider of the
+                    Needforseat France website.
                 </h3>
             </div>
-            
-            
-            
-              <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/G2_jersey_300ko.jpg"/>
+
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/G2_jersey_300ko.jpg" />
             </div>
-    
-            
-             
-              <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/knify.jpg"/>
+
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/knify.jpg" />
             </div>
-    
-            
-              <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/sobre.jpg"/>
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/sobre.jpg" />
             </div>
-    
-            
-              <div class="images">
-                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/sobre2.jpg"/>
+
+
+            <div class="images">
+                <img class="img-fluid" id="projet8-3" src="../assets/images/projet17/sobre2.jpg" />
             </div>
-    
-    
-          
+
+
+
             <div class="lastimage">
-            <div class="images">
-                <img class="img-fluid" id="projet8-6" src="../assets/images/projet17/visuel_v2.jpg"/>
-                </div></div>
-          
-            
+                <div class="images">
+                    <img class="img-fluid" id="projet8-6" src="../assets/images/projet17/visuel_v2.jpg" />
+                </div>
+            </div>
+
+
             <div class="up"><img id="flecheup" src="../assets/images/flacheup2.png"></div>
         </div>
-        
-              <!-- FIN PROJET 17 -->
-        
-                            
-        
-                            <!-- LISTE DES PROJETS -->
-        
-        
-            
+
+        <!-- FIN PROJET 17 -->
+
+
+
+        <!-- LISTE DES PROJETS -->
+
+
+
         <div class="row justify-content-center projets" id="projets">
-        
-         
-           
-          
+
+
+
+
             <div class="col-lg-4 mix-target animation" id="projet1" data-order=1>
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Quand je serai grand Pixel weekend.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/when-i-will-be-older.png">
-                    </div>
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Quand je serai grand Pixel weekend.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/when-i-will-be-older.png">
+                </div>
             </div>
-               
-            
-            <div class="col-lg-4 mix-target graphisme" id="projet2" data-order=2>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/It's just a cigarete photoshop mashup.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/its-just-a-cigarete.png">
-                    </div>
-            
+
+
+            <div class="col-lg-4 mix-target graphisme lpatc" id="projet2" data-order=2>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/It's just a cigarete photoshop mashup.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/its-just-a-cigarete.png">
+                </div>
+
             </div>
-            
-              <div class="col-lg-4 mix-target graphisme" id="projet3" data-order=3>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Tshirt ATC isometric.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/t-shirt-lpmd-atc.png">
-                    </div>
-              
+
+            <div class="col-lg-4 mix-target graphisme lpatc" id="projet3" data-order=3>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Tshirt ATC isometric.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/t-shirt-lpmd-atc.png">
+                </div>
+
             </div>
-            
-            
-              <div class="col-lg-4 mix-target photos graphisme event " id="projet4" data-order=4>
-            
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Gamers Assembly Maxnomic design.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/product-design.png">
-                    </div>
-          
+
+
+            <div class="col-lg-4 mix-target photos graphisme event alternancepreachers" id="projet4" data-order=4>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Gamers Assembly Maxnomic design.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/product-design.png">
+                </div>
+
             </div>
-            
-               
-              <div class="col-lg-4 mix-target graphisme" id="projet5" data-order=5>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Affiche photomontage surpêche.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/fisheye.png">
-                    </div>
-           
+
+
+            <div class="col-lg-4 mix-target graphisme dutmmi" id="projet5" data-order=5>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Affiche photomontage surpêche.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/fisheye.png">
+                </div>
+
             </div>
-            
-                 
-              <div class="col-lg-4 mix-target graphisme" id="projet6" data-order=6>
-              
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Gout d'idées pictogrammes.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/gout-didees.png">
-                    </div>
-               
+
+
+            <div class="col-lg-4 mix-target graphisme goutdidee" id="projet6" data-order=6>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Gout d'idées pictogrammes.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/gout-didees.png">
+                </div>
+
             </div>
-            
-              <div class="col-lg-4 mix-target graphisme dessin" id="projet7"data-order=7>
-                
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Site internet portfolio valentin luang rath.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/portfoliov1.png">
-                    </div>
+
+            <div class="col-lg-4 mix-target graphisme dessin" id="projet7" data-order=7>
+
+                <img class="img-fluid w-100"
+                    src="../assets/images/thumbnail/Site internet portfolio valentin luang rath.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/portfoliov1.png">
+                </div>
             </div>
-            
-              <div class="col-lg-4 mix-target photos" id="projet8" data-order=8>
-                
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Photo Tours de nuit.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/tours-by-night.png">
-                    </div>
-                
+
+            <div class="col-lg-4 mix-target photos" id="projet8" data-order=8>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Photo Tours de nuit.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/tours-by-night.png">
+                </div>
+
             </div>
-            
-             
-              <div class="col-lg-4 mix-target graphisme" id="projet9" data-order=9>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Police d'écriture Magdalena.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/magdalena.png">
-                    </div>
-               
+
+
+            <div class="col-lg-4 mix-target graphisme lpatc" id="projet9" data-order=9>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Police d'écriture Magdalena.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/magdalena.png">
+                </div>
+
             </div>
             <!--
               <div class="col-lg-4 mix-target animation" data-order=9>
@@ -1402,72 +1572,72 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
                 </a>
             </div>
             -->
-              <div class="col-lg-4 mix-target photos" id="projet10" data-order=10>
-              
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Photo de corse.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/corsica-tour.png">
-                    </div>
-             
-            </div>
-            
-              <div class="col-lg-4 mix-target photos event" id="projet11" data-order=11>
-                
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 photo.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/dreamhack-backstage.png">
-                    </div>
-               
-            </div>
-            
-              <div class="col-lg-4 mix-target animation video" id="projet12" data-order=12>
-            
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Motion Design Corte2.0.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/corte20.png">
-                    </div>
+            <div class="col-lg-4 mix-target photos" id="projet10" data-order=10>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Photo de corse.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/corsica-tour.png">
+                </div>
 
             </div>
-            
-              <div class="col-lg-4 mix-target event" id="projet13" data-order=13>
-            
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 Overlay design.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/animated-overlay.png">
-                    </div>
-                
+
+            <div class="col-lg-4 mix-target photos event alternancepreachers" id="projet11" data-order=11>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 photo.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/dreamhack-backstage.png">
+                </div>
+
             </div>
-            
-              <div class="col-lg-4 mix-target event" id="projet14" data-order=14>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 Logo design.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/logo%20design.png">
-                    </div>
-              
+
+            <div class="col-lg-4 mix-target animation video lpatc" id="projet12" data-order=12>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Motion Design Corte2.0.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/corte20.png">
+                </div>
+
             </div>
-            
-              <div class="col-lg-4 mix-target animation" id="projet15" data-order=15>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Byop publicité 3D.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/byop%20advertising.png">
-                    </div>
-                
+
+            <div class="col-lg-4 mix-target event alternancepreachers" id="projet13" data-order=13>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 Overlay design.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/animated-overlay.png">
+                </div>
+
             </div>
-           
-            
-              <div class="col-lg-4 mix-target graphisme" id="projet17" data-order=17>
-               
-                    <img class="img-fluid w-100" src="../assets/images/thumbnail/Maxnomic réseaux sociaux design.jpg">
-                    <div  class="hover_project">
-                        <img src="../assets/images/thumbnailhover/social%20networks.png">
-                    </div>
-               
+
+            <div class="col-lg-4 mix-target event alternancepreachers" id="projet14" data-order=14>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Dreamhack 2019 Logo design.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/logo%20design.png">
+                </div>
+
             </div>
-            
-            
-    
+
+            <div class="col-lg-4 mix-target animation dutmmi" id="projet15" data-order=15>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Byop publicité 3D.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/byop%20advertising.png">
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 mix-target graphisme alternancepreachers" id="projet17" data-order=17>
+
+                <img class="img-fluid w-100" src="../assets/images/thumbnail/Maxnomic réseaux sociaux design.jpg">
+                <div class="hover_project">
+                    <img src="../assets/images/thumbnailhover/social%20networks.png">
+                </div>
+
+            </div>
+
+
+
             <!--
               <div class="col-lg-4 mix-target video" data-order=18>
                 <a id="#projet18">
@@ -1504,25 +1674,305 @@ Our inspiration for this project is the artist Flora Borsi, specialized in self-
             
             
              -->
-        
+
+        </div>
+
+        <div class="bottom-menu text-center">
+            <img class="bottom-previous mr-5" src="../assets/images/left_arrow.png">
+            <img class="bottom-cross" src="../assets/images/checkmark.png">
+            <img class="bottom-next ml-5" src="../assets/images/right_arrow.png">
         </div>
     </div>
-   
-    
- 
-    
-    <div class="justify-content-center footer">
+    <div class="cache" style="height:800px; display:none;">
+
+    </div>
+
+
+    <!--
+        <div class="row mt-5">
+            <img class="m-auto img-fluid" src="../assets/images/1140pxwidth.jpg">
+        </div>-->
+    <!--
+        <div class="row mt-3">
+            <div>
+                <div class="title">
+                    <h5>// FORMATIONS</h5>
+                </div>
+            </div>
+        </div>-->
+    <div class="container" id="cv">
+        <div class="row">
+            <img class="titreimg" src="../assets/images/FORMATIONS.png" />
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="timeline">
+                <div class="containeur left">
+                    <div class="content">
+                        <h2 id="date">2018-2019</h2>
+                        <p id="formation">LICENCE PRO</p>
+                        <p id="texteformation">Lincence professionnelle Métiers du Design option ATC à l’IUT de Corte en
+                            alternance chez The Preachers.</p>
+                        <div class="container-voir-plus">
+                            <p id="voirplus" data-filter=".lpatc"><a href="#portfolio" id="voirplus"><i>// Voir les
+                                        projets</i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containeur right">
+                    <div class="content">
+                        <h2 id="date">2016-2018</h2>
+                        <p id="formation">DUT</p>
+                        <p id="texteformation">Métiers du Multimédia et de l’Internet à l’IUT d’Arles, Université
+                            d’Aix-Marseille.</p>
+                        <div class="container-voir-plus">
+                            <p id="voirplus" data-filter=".dutmmi"><a href="#portfolio" id="voirplus"><i>// Voir les
+                                        projets</i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containeur left">
+                    <div class="content">
+                        <h2 id="date">2013-2016</h2>
+                        <p id="formation">BAC PRO</p>
+                        <p id="texteformation">Cuisine mention bien au Lycée Hôtelier de Tain l’Hermitage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <img class="titreimg" src="../assets/images/EXPERIENCES.png" />
+        </div>
+    </div>
+
+
+    <!--
+        <div class="row mt-3">
+            <div>
+                <div class="title">
+                    <h5 id="titrexp">// EXPERIENCES</h5>
+                </div>
+            </div>
+        </div>
+    -->
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="timeline">
+                <div class="containeur left">
+                    <div class="content">
+                        <h2 id="date">2018-2019</h2>
+                        <p id="formation">ALTERNANCE</p>
+                        <p id="texteformation">durant 1 an chez The Preachers à Tours en création Print & Web pour le
+                            compte de
+                            NEEDforSEAT France et Dreamhack France.</p>
+                        <div class="container-voir-plus">
+                            <p id="voirplus" data-filter=".alternancepreachers"><a href="#portfolio" id="voirplus"><i>//
+                                        Voir
+                                        les projets</i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containeur right">
+                    <div class="content">
+                        <h2 id="date">2018</h2>
+                        <p id="formation">STAGE</p>
+                        <p id="texteformation">de 3 mois chez The Preachers à Tours en création Print & Web pour le
+                            compte de
+                            NEEDforSEAT France et Dreamhack France.</p>
+                    </div>
+                </div>
+                <div class="containeur left">
+                    <div class="content">
+                        <h2 id="date">2017</h2>
+                        <p id="formation">STAGE</p>
+                        <p id="texteformation">d’une durée de 3 semaines en création de visuel, en développement
+                            Wordpress et en
+                            créativité chez l’agence Goût d’idées en Arles.</p>
+                        <div class="container-voir-plus">
+                            <p id="voirplus" data-filter=".goutdidee"><a href="#portfolio" id="voirplus"><i>// Voir les
+                                        projets</i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containeur right">
+                    <div class="content">
+                        <h2 id="date">2013-2016</h2>
+                        <p id="formation">STAGES</p>
+                        <p id="texteformation">en cuisine traditionnelle d’une durée totale de 22 semaines (dont 1 mois
+                            à
+                            Manchester) répartis sur la durée de mon Baccalauréat professionnel cuisine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="container">
+        <div class="row">
+            <img class="titreimg" src="../assets/images/COMP%C3%89TENCES.png" />
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-5 anim">
+                <div class="row">
+                    <div>
+                        <div id="ae">
+                            <img src="../assets/images/Ae2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>AFTER EFFECT</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="ai">
+                            <img src="../assets/images/Ai2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>ILLUSTRATOR</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="an">
+                            <img src="../assets/images/An2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>ANIMATE</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="id">
+                            <img src="../assets/images/Id2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>IN DESIGN</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="pr">
+                            <img src="../assets/images/Pr2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>PREMIERE PRO</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="ps">
+                            <img src="../assets/images/Ps2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>PHOTOSHOP</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="c4d">
+                            <img src="../assets/images/c4d2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>CINÉMA 4D</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="code">
+                            <img src="../assets/images/code2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>CODE</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="klynt">
+                            <img src="../assets/images/klynt2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>KLYNT</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div id="photo">
+                            <img src="../assets/images/photo2.png">
+                        </div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="title">
+                            <h5>PHOTO</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="col-md-7 images_skills" style="line-height:50" id="skills_img">
+        <!--<img src="../assets/images/plumereau1.jpg" class="img-fluid" id="img_ai">-->
+    </div>
+
+    <div class="justify-content-center footer" id="contact">
         <div class="footer_infos">
             <h6 id="name2">valentinluangrath@live.fr</h6>
             <h6>© Tous droits réservés Valentin Luang Rath - 2019</h6>
             <div id="socialnetworkdiv" class="row">
-            <div id="socialnetwork">
-               <a href="https://www.linkedin.com/in/valentin-luang-rath-1b1a12140/"  target="_blank"> <img src="../assets/images/linkedin.png"/></a>
+                <div id="socialnetwork">
+                    <a href="https://www.linkedin.com/in/valentin-luang-rath-1b1a12140/" target="_blank"> <img
+                            src="../assets/images/linkedin_black.png" /></a>
+                </div>
+                <div id="socialnetwork2">
+                    <a href="https://www.instagram.com/sylvathyr/" target="_blank"> <img
+                            src="../assets/images/instagram_black.png" /></a>
+                </div>
             </div>
-            <div id="socialnetwork2">
-                <a href="https://www.instagram.com/sylvathyr/"  target="_blank"> <img src="../assets/images/instagram.png"/></a>     
-            </div></div>
-        
         </div>
     </div>
 </body>
