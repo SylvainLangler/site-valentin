@@ -640,7 +640,7 @@ h5 {
     content: "";
     position: absolute;
     z-index: -1;
-    left: 0;
+    left: 0%;
     right: 80%;
     bottom: 0;
     background: #00ffae;
@@ -724,6 +724,102 @@ h5 {
     }
 }
 
+.presentation{
+text-align: center;
+font-family: 'Quicksand';
+font-weight: 300;
+font-size: 17px;
+max-width: 100%!important;
+flex: 0 0 100%!important;
+    margin-top: 3vw;
+
+}
+
+@media screen and (max-width: 768px) {
+    .presentation{
+        font-size: 15px!important;
+    }}
+
+.souligne{
+    display: inline;
+}
+
+.souligne,
+.souligne{
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.souligne:before,
+.souligne:before,
+.souligne:not(:active):before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 2px;
+    left: -2px;
+    bottom: 0;
+    background: #00ffae;
+    height: 8px;
+
+
+
+}
+
+
+.souligne2{
+    
+}
+
+.souligne2{
+    display: inline;
+}
+
+.souligne2,
+.souligne2{
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.souligne2:before,
+.souligne2:before,
+.souligne2:not(:active):before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 10px;
+    left: -10px;
+    bottom: 0;
+    background: #00ffae;
+    height: 15px;
+
+
+
+}
+
+.mt-5, .my-5 {
+    margin-top: 0rem !important;}
+
+#apropos, #portfolio, #cv, #cv2{
+    text-align: center;
+    margin-top: 5vw!important;
+}
+
+#cv, #cv2{
+    margin-bottom: 3vw!important;
+}
+
+#apropostexte{
+    display: inline;
+}
 
 /* PORTFOLIO */
 
