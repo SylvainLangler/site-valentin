@@ -824,13 +824,15 @@ flex: 0 0 100%!important;
 
 }
 
-#apropos, #portfolio, #cv, #cv2{
+#apropos, #portfolio{
     text-align: center;
+    margin-top:3vw;
 }
 
 #cv, #cv2{
     margin-bottom: 3vw!important;
     margin-top:5rem;
+    text-align: center;
 }
 
 #apropostexte{
