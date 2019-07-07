@@ -20,15 +20,14 @@ $(document).ready(function () {
             src && img.attr("src", src).on('load',function(){
                 // Call the first argument passed (like fadeIn, slideIn, default is 'show').
                 // This piece is like doing img.fadeIn(1000) but in a more dynamic way.
+                if (innerWidth <= 768) {
+                  $(".next, .previous, .croix, .up").hide();
+                }
                 img[args[0]||"show"].apply(img, args.splice(1));
             });
         });
     }
 }(jQuery));
-
-  $(".testbtn").click(function(){
-    $(".hidden").reveal();
-  })
 
   // Animation du menu avec un hamburger pour le menu sur format téléphone
   $(".hamburger").click(function () {

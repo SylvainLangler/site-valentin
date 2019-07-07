@@ -824,16 +824,13 @@ flex: 0 0 100%!important;
 
 }
 
-.mt-5, .my-5 {
-    margin-top: 0rem !important;}
-
 #apropos, #portfolio, #cv, #cv2{
     text-align: center;
-    margin-top: 5vw!important;
 }
 
 #cv, #cv2{
     margin-bottom: 3vw!important;
+    margin-top:5rem;
 }
 
 #apropostexte{

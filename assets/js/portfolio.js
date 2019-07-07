@@ -134,7 +134,7 @@ $(document).ready(function () {
     // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
     if (innerWidth <= 768) {
       $(".bottom-menu").show();
-      $("#flecheright, #flecheleft, .croix, #flecheup").hide();
+      $(".next, .previous, .croix, .up").hide();
     }
 
     // on scroll vers le titre portfolio si jamais l'utilisateur a cliqué sur un projet un peu plus bas dans la page
