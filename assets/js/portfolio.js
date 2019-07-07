@@ -126,6 +126,11 @@ $(document).ready(function () {
   });
 
   function openProject(id) {
+
+    if(!($(id).hasClass("project-visited"))){
+      $(id+" img").reveal();
+    }
+    
     // si l'utilisateur utilise un smartphone, on affiche une interface pour naviguer
     if (innerWidth <= 768) {
       $(".bottom-menu").show();
@@ -154,6 +159,8 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".cache").hide();
     }, 1000);
+
+    $(id).addClass("project-visited");
 
     $(".up").click(function () {
       $('html, body').stop().animate({
@@ -191,6 +198,8 @@ $(document).ready(function () {
 
   function showNextProject(actualPopup) {
 
+    
+
     if (innerWidth <= 768) {
       $('html, body').stop().animate({
         scrollTop: $("#portfolio").offset().top
@@ -226,7 +235,12 @@ $(document).ready(function () {
         }
         
       nextPopup.addClass("popup-actif").show(300).css("display", "flex");
+      if(!(nextPopup.hasClass("project-visited"))){
+        nextPopup.find("img").reveal();
+      }
+      nextPopup.addClass("project-visited");
     }
+
   }
 
   function showPreviousProject(actualPopup) {
@@ -265,9 +279,14 @@ $(document).ready(function () {
       else{
         var previousPopup = $(actualPopup).prev();
       }
-      
-    previousPopup.addClass("popup-actif").show(300).css("display", "flex");
+      previousPopup.addClass("popup-actif").show(300).css("display", "flex");
+      if(!(previousPopup.hasClass("project-visited"))){
+        previousPopup.find("img").reveal();
+      }
+      previousPopup.addClass("project-visited");
     }
+
+    
   }
 
   $("#voirplus").click(function () {

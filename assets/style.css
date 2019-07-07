@@ -794,11 +794,6 @@ flex: 0 0 100%!important;
 
 }
 
-
-.souligne2{
-    
-}
-
 .souligne2{
     display: inline;
 }
@@ -1402,9 +1397,6 @@ flex: 0 0 100%!important;
     transition: transform 0.3s 0.7s, opacity 0s 0.7s;
 }
 
-
-n-timing-function: ease-out;
-}
 
 
 
