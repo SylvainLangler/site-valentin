@@ -1368,7 +1368,7 @@ flex: 0 0 100%!important;
     margin-left: -22px;
     margin-top: -22px;
     border-radius: 50%;
-    background: #4CCB83 url("../site-valentin/images/cd-arrows.svg") no-repeat center center;
+    background: #4CCB83 url("../assets/images/cd-arrows.svg") no-repeat center center;
     cursor: move;
 
     opacity: 0;
